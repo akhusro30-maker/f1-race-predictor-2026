@@ -1,0 +1,582 @@
+<style>
+#dash-root .f1 { font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.f1 h1, .f1 h2, .f1 h3 { margin: 0; font-weight: 400; }
+.f1-title { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1.2; }
+.f1-lede { margin: var(--cds-gap-xs) 0 var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 60rem; }
+.f1-lede b, .f1-em { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.f1-tabs { display: flex; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); margin-bottom: var(--cds-gap-md); flex-wrap: wrap; }
+.f1-tab { appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); font: inherit; font-size: var(--cds-font-size-body); padding: var(--cds-pad-sm) var(--cds-pad-md); cursor: pointer; margin-bottom: -1px; }
+.f1-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.f1-picker { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-bottom: var(--cds-gap-md); }
+.f1-pick { appearance: none; font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-md); border-radius: 999px; border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); cursor: pointer; }
+.f1-pick[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+.f1-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.f1-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: var(--cds-gap-md); margin-bottom: var(--cds-gap-md); }
+.f1-tile, .f1-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.f1-tile .f1-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.f1-big { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-weight: 400; margin: var(--cds-gap-xs) 0; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.f1-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); margin-bottom: var(--cds-gap-md); }
+.f1-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.f1-card .f1-note { margin: var(--cds-gap-xs) 0 var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.f1-section-h { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-lg) 0 var(--cds-gap-sm); }
+.f1-chart { position: relative; min-height: 120px; }
+.f1-chart svg { display: block; overflow: visible; }
+.f1-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 5; display: none; }
+.f1-tip .f1-tip-h { color: var(--cds-text-secondary); }
+.f1-sw { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 2px; margin-right: 0.4rem; vertical-align: baseline; }
+.f1-tablebox { max-height: 26rem; overflow: auto; }
+.f1 table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.f1 th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); position: sticky; top: 0; background: var(--color-panel); white-space: nowrap; }
+.f1 td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.f1 td.n, .f1 th.n { text-align: right; }
+.f1 td.bar { min-width: 6.5rem; }
+.f1-cellbar { display: flex; align-items: center; gap: var(--cds-gap-xs); justify-content: flex-end; }
+.f1-cellbar i { display: block; height: 6px; border-radius: 3px; flex: 0 0 auto; }
+.f1-cellbar span { min-width: 2.8rem; text-align: right; }
+.f1-plan { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); line-height: 1.15; }
+.f1-text { font-size: var(--cds-font-size-body); margin: var(--cds-gap-xs) 0; }
+.f1-kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: var(--cds-gap-sm); margin-top: var(--cds-gap-md); }
+.f1-kv div { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-xs); }
+.f1-kv b { display: block; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; }
+.f1-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: var(--cds-gap-xs); }
+.f1-yes { color: var(--color-ok); } .f1-no { color: var(--color-fg-muted); }
+.f1-list { margin: var(--cds-gap-sm) 0 0; padding-left: 1.1rem; font-size: var(--cds-font-size-body); }
+.f1-list li { margin-bottom: var(--cds-gap-xs); }
+.f1-method { font-size: var(--cds-font-size-body); color: var(--color-fg-muted); max-width: 60rem; }
+.f1-method p { margin: 0 0 var(--cds-gap-sm); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.f1-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: inherit; }
+.f1-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+@media (prefers-reduced-motion: no-preference) {
+  .f1-anim rect.f1-grow { animation: f1grow var(--cds-dur-slow) var(--cds-ease-out); transform-box: fill-box; transform-origin: left; }
+  @keyframes f1grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+}
+</style>
+
+<div class="f1">
+  <h1 class="f1-title">F1 Race Predictor 2026</h1>
+  <p class="f1-lede" id="lede"><span class="dash-skeleton">—</span></p>
+
+  <div class="f1-tabs" role="tablist">
+    <button class="f1-tab" role="tab" id="tab-race" data-tab="race" aria-selected="true">Next races</button>
+    <button class="f1-tab" role="tab" id="tab-season" data-tab="season" aria-selected="false">2026 season</button>
+    <button class="f1-tab" role="tab" id="tab-model" data-tab="model" aria-selected="false">How good is the model?</button>
+  </div>
+
+  <!-- ============ NEXT RACES ============ -->
+  <section id="race" class="f1-page">
+    <div class="f1-picker" id="picker" data-source="races" role="group" aria-label="Choose a race"></div>
+
+    <div class="f1-tiles">
+      <div class="f1-tile" id="tile-win">
+        <div class="f1-label">Favourite to win</div>
+        <div class="f1-big" id="k-win-name">—</div>
+        <div class="f1-sub"><span id="k-win-p">—</span> chance · next: <span id="k-win2">—</span> <span id="k-win2-p">—</span></div>
+      </div>
+      <div class="f1-tile" id="tile-pole">
+        <div class="f1-label">Most likely pole</div>
+        <div class="f1-big" id="k-pole-name">—</div>
+        <div class="f1-sub"><span id="k-pole-p">—</span> chance · qualifying <span id="k-qdate">—</span></div>
+      </div>
+      <div class="f1-tile" id="tile-plan">
+        <div class="f1-label">Expected best strategy</div>
+        <div class="f1-big" id="k-plan">—</div>
+        <div class="f1-sub">Tyres: <span id="k-comp">—</span></div>
+      </div>
+      <div class="f1-tile" id="tile-polewin">
+        <div class="f1-label">Won from P1 on the grid</div>
+        <div class="f1-big" id="k-polewin">—</div>
+        <div class="f1-sub">of races here since 2014 (<span id="k-editions">—</span> races)</div>
+      </div>
+    </div>
+
+    <div class="f1-grid">
+      <div class="f1-card" id="card-win">
+        <h3>Win chances</h3>
+        <p class="f1-note">Before qualifying. Top eight drivers; the full field is in the table below.</p>
+        <div class="f1-chart" id="chart-win" data-source="predictions" style="min-height:212px"></div>
+      </div>
+      <div class="f1-card" id="card-strategy">
+        <h3>Race strategy</h3>
+        <p class="f1-note">From pit stops of top-10 finishers at this circuit in <span id="s-seasons">—</span>.</p>
+        <div class="f1-plan" id="s-plan">—</div>
+        <p class="f1-text" id="s-detail">—</p>
+        <p class="f1-text f1-sub" id="s-comp-note">—</p>
+        <div class="f1-sub">Pit windows by lap number. Bar: middle half of stops; tick: typical lap.</div>
+        <div class="f1-chart" id="chart-window" data-source="races" style="min-height:84px"></div>
+        <div class="f1-chart" id="chart-stops" data-source="races" style="min-height:52px;margin-top:var(--cds-gap-md)"></div>
+        <div class="f1-kv">
+          <div><span class="f1-sub">Pit lane time</span><b id="s-pit">—</b></div>
+          <div><span class="f1-sub">Places gained, 1 stop</span><b id="s-g1">—</b></div>
+          <div><span class="f1-sub">Places gained, 2 stops</span><b id="s-g2">—</b></div>
+        </div>
+        <p class="f1-text f1-sub" id="s-alt">—</p>
+      </div>
+    </div>
+
+    <div class="f1-grid">
+      <div class="f1-card" id="card-quali">
+        <h3>Qualifying and pole</h3>
+        <p class="f1-note" id="q-note">—</p>
+        <div class="f1-chart" id="chart-pole" data-source="predictions" style="min-height:134px"></div>
+        <div class="f1-kv">
+          <div><span class="f1-sub">Winner started front row</span><b id="q-fr">—</b></div>
+          <div><span class="f1-sub">Winner's average grid slot</span><b id="q-avg">—</b></div>
+          <div><span class="f1-sub">Places changed per driver</span><b id="q-change">—</b></div>
+        </div>
+      </div>
+      <div class="f1-card" id="card-history">
+        <h3>Past pole sitters here</h3>
+        <p class="f1-note">Did pole convert, and how many stops did the winner make?</p>
+        <div class="f1-tablebox">
+          <table id="t-history" data-source="circuit_history" data-row-key="round,season">
+            <thead><tr>
+              <th data-field="season">Year</th><th data-field="pole">Pole</th><th data-field="pole_team">Team</th>
+              <th data-field="winner">Winner</th><th class="n" data-field="winner_grid">From grid</th>
+              <th class="n" data-field="winner_stops">Stops</th><th data-field="pole_won">Pole sitter won?</th>
+            </tr></thead><tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="f1-card" id="card-field">
+      <h3>Whole field</h3>
+      <p class="f1-note">Chances before qualifying, with each driver's record at this circuit (last five visits).</p>
+      <div class="f1-tablebox">
+        <table id="t-field" data-source="predictions" data-row-key="round,driver_id">
+          <thead><tr>
+            <th data-field="driver">Driver</th><th data-field="team">Team</th>
+            <th class="n" data-field="p_win">Win</th><th class="n" data-field="p_pole">Pole</th><th class="n" data-field="p_podium">Podium</th>
+            <th class="n" data-field="pts_last5">Points/race, last 5</th>
+            <th class="n" data-field="circ_starts">Starts here</th><th class="n" data-field="circ_avg_finish">Avg finish here</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEASON ============ -->
+  <section id="season" class="f1-page" hidden>
+    <div class="f1-grid">
+      <div class="f1-card" id="card-title">
+        <h3>Title fight</h3>
+        <p class="f1-text" id="title-text">—</p>
+        <ul class="f1-list" id="title-list" data-source="title"></ul>
+      </div>
+      <div class="f1-card" id="card-standings-chart">
+        <h3>Drivers' championship</h3>
+        <p class="f1-note">Points after the latest race. Top ten.</p>
+        <div class="f1-chart" id="chart-standings" data-source="standings" style="min-height:280px"></div>
+      </div>
+    </div>
+    <div class="f1-card" id="card-rounds" style="margin-bottom:var(--cds-gap-md)">
+      <h3>Every 2026 race: pole, winner and the model's pre-weekend pick</h3>
+      <p class="f1-note" id="rounds-note">—</p>
+      <div class="f1-tablebox">
+        <table id="t-season" data-source="season" data-row-key="round">
+          <thead><tr>
+            <th class="n" data-field="round">Rd</th><th data-field="gp">Grand Prix</th><th data-field="pole">Pole</th>
+            <th data-field="winner">Winner</th><th class="n" data-field="winner_grid">From grid</th>
+            <th data-field="model_pick">Model's pick</th><th class="n" data-field="pick_p">Pick's chance</th>
+            <th class="n" data-field="winner_rank">Winner's rank in picks</th><th data-field="pick_won">Right?</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="f1-card" id="card-standings">
+      <h3>Standings detail</h3>
+      <p class="f1-note">Last five results, oldest first.</p>
+      <div class="f1-tablebox">
+        <table id="t-standings" data-source="standings" data-row-key="driver_id">
+          <thead><tr>
+            <th class="n" data-field="pos">Pos</th><th data-field="driver">Driver</th><th data-field="team">Team</th>
+            <th class="n" data-field="points">Points</th><th class="n" data-field="wins">Wins</th><th class="n" data-field="podiums">Podiums</th>
+            <th class="n" data-field="poles">Poles</th><th class="n" data-field="dnfs">Retirements</th><th data-field="last5">Last five</th>
+          </tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODEL ============ -->
+  <section id="model" class="f1-page" hidden>
+    <p class="f1-lede" id="model-lede">—</p>
+    <div class="f1-tiles">
+      <div class="f1-tile"><div class="f1-label">Favourite won the race</div><div class="f1-big" id="m-top1">—</div><div class="f1-sub">Simple form baseline: <span id="m-top1-b">—</span></div></div>
+      <div class="f1-tile"><div class="f1-label">Winner was in the top 3 picks</div><div class="f1-big" id="m-top3">—</div><div class="f1-sub">Baseline: <span id="m-top3-b">—</span></div></div>
+      <div class="f1-tile"><div class="f1-label">Log loss better than baseline</div><div class="f1-big" id="m-ll">—</div><div class="f1-sub">95% interval <span id="m-ll-lo">—</span> to <span id="m-ll-hi">—</span></div></div>
+      <div class="f1-tile"><div class="f1-label">Pole favourite took pole</div><div class="f1-big" id="m-pole">—</div><div class="f1-sub">Baseline: <span id="m-pole-b">—</span></div></div>
+    </div>
+    <div class="f1-grid">
+      <div class="f1-card" id="card-seasons">
+        <h3>How often the favourite won, by season</h3>
+        <p class="f1-note">Each race predicted using only earlier races.</p>
+        <div class="f1-legend"><span><i class="f1-sw" id="lg-model"></i>Model</span><span><i class="f1-sw" style="background:var(--cds-chart-muted)"></i>Form baseline</span></div>
+        <div class="f1-chart" id="chart-seasons" data-source="backtest_seasons" style="min-height:220px"></div>
+      </div>
+      <div class="f1-card" id="card-calib">
+        <h3>Are the percentages honest?</h3>
+        <p class="f1-note">Predicted chance against how often it happened. On the dashed line means calibrated.</p>
+        <div class="f1-legend"><span><i class="f1-sw" id="lg-win"></i>Win</span><span><i class="f1-sw" id="lg-pod"></i>Podium</span></div>
+        <div class="f1-chart" id="chart-calib" data-source="calibration" style="min-height:260px"></div>
+      </div>
+    </div>
+    <div class="f1-grid">
+      <div class="f1-card" id="card-imp">
+        <h3>What drives the win prediction</h3>
+        <p class="f1-note">Share of the tree model's total gain. Top ten inputs.</p>
+        <div class="f1-chart" id="chart-imp" data-source="importance" style="min-height:260px"></div>
+      </div>
+      <div class="f1-card f1-method" id="card-method">
+        <h3 style="color:var(--color-fg)">How it works</h3>
+        <p class="f1-note">Data: the open F1DB dataset, updated after every race.</p>
+        <p>Each driver gets inputs known before the weekend starts: recent finishes and qualifying positions, points per race, the team's qualifying pace, retirements, head-to-head against the team-mate, past results at the circuit, and how much this circuit rewards pole.</p>
+        <p>Two models score every driver: a regularised logistic regression and a small LightGBM tree model. Their average is rescaled so the field's win chances add up to one. Separate models of the same design predict pole and podium. Older seasons count for less, because regulations change.</p>
+        <p>The test: every race since the start of the 2022 season was predicted by a model retrained on only the races before it. The baseline gives each driver a chance in proportion to their recent points.</p>
+        <p>These are pre-qualifying odds. Grid position is the strongest single signal in F1, so they are most useful before Saturday. Later rounds use form as of the latest race and will shift as results come in.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+dash.calc('pole_favourite', {
+  inputs: ['predictions'], title: 'Most likely pole per race',
+  description: 'For each upcoming race, the driver with the highest pole chance.',
+  fn: (predictions) => d3.groups(predictions, (r) => r.round).map(([round, rs]) => {
+    const b = d3.greatest(rs, (r) => r.p_pole);
+    return { round, driver: b.driver, p_pole: b.p_pole };
+  }),
+});
+dash.calc('season_hits', {
+  inputs: ['season'], title: '2026 picks that won',
+  description: 'Races this season where the pre-weekend favourite won, races where the winner was in its top two, and the race count.',
+  fn: (season) => [{ hits: season.filter((r) => r.pick_won === 'Yes').length, top2: season.filter((r) => r.winner_rank <= 2).length, races: season.length }],
+});
+</script>
+<script>
+(() => {
+  const pc = (v) => v == null || isNaN(v) ? '—' : (v > 0 && v < 0.1 ? d3.format('.1%')(v) : d3.format('.0%')(v));
+  const num1 = d3.format('.1f');
+  const signed = d3.format('+.1f');
+  const dateFmt = (s) => s ? d3.utcFormat('%a %b %-d')(new Date(s + 'T00:00:00Z')) : '—';
+  const ordinal = (n) => { const s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); };
+  const ok = (id) => { const r = dash.data(id); return r.status === 'ok' ? r.data : null; };
+  const failed = (id) => dash.data(id).status === 'error';
+  const $ = (id) => document.getElementById(id);
+  const mark = (el, source, field, where) => {
+    el.setAttribute('data-source', source);
+    if (field) el.setAttribute('data-field', field); else el.removeAttribute('data-field');
+    if (where) el.setAttribute('data-where', where); else el.removeAttribute('data-where');
+    return el;
+  };
+  const setText = (id, text, source, field, where) => { const el = $(id); el.textContent = text; if (source) mark(el, source, field, where); el.classList.remove('dash-skeleton'); return el; };
+  const span = (text, source, field, where, cls) => { const s = document.createElement('span'); s.textContent = text; if (cls) s.className = cls; return mark(s, source, field, where); };
+
+  // ---- tabs ----
+  let tab = 'race';
+  const showTab = (t) => {
+    tab = t;
+    document.querySelectorAll('.f1-tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === t)));
+    document.querySelectorAll('.f1-page').forEach((p) => { p.hidden = p.id !== t; });
+    dash.setLink(t);
+    render();
+  };
+  document.querySelectorAll('.f1-tab').forEach((b) => b.addEventListener('click', () => showTab(b.dataset.tab)));
+
+  // ---- chart helpers ----
+  const tipFor = (box) => { let t = box.querySelector('.f1-tip'); if (!t) { t = document.createElement('div'); t.className = 'f1-tip'; box.appendChild(t); } return t; };
+  const showTip = (box, ev, lines) => {
+    const t = tipFor(box); t.replaceChildren();
+    lines.forEach((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 'f1-tip-h'; if (l.color) { const s = document.createElement('i'); s.className = 'f1-sw'; s.style.background = l.color; d.appendChild(s); } d.appendChild(document.createTextNode(l.text)); t.appendChild(d); });
+    t.style.display = 'block';
+    const r = box.getBoundingClientRect(); let x = ev.clientX - r.left + 12, y = ev.clientY - r.top + 12;
+    const w = t.offsetWidth; if (x + w > r.width) x = Math.max(0, ev.clientX - r.left - w - 12);
+    t.style.left = x + 'px'; t.style.top = y + 'px';
+  };
+  const hideTip = (box) => { const t = box.querySelector('.f1-tip'); if (t) t.style.display = 'none'; };
+  const clearChart = (box, id) => { box.querySelectorAll('svg,.f1-fail').forEach((n) => n.remove()); if (id && failed(id)) { const f = document.createElement('div'); f.className = 'f1-fail'; f.textContent = 'Failed to load'; box.appendChild(f); } };
+  const measure = (svg, texts, size) => { const g = svg.append('g').attr('font-size', size); let m = 0; texts.forEach((t) => { const n = g.append('text').text(t).node(); m = Math.max(m, n.getComputedTextLength()); }); g.remove(); return m; };
+  const capSize = () => parseFloat(getComputedStyle($('lede')).fontSize) * 0.85 || 12;
+
+  // horizontal bars: items [{label, value, color, swatch, tip:[...]}]
+  const hbars = (box, items, { fmt, max, color }) => {
+    const W = box.clientWidth; if (!W) return;
+    const fs = capSize(), rowH = 26;
+    const H = items.length * rowH + 4;
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('class', 'f1-anim');
+    const labW = Math.min(W * 0.45, measure(svg, items.map((d) => d.label), fs) + 18);
+    const valW = measure(svg, items.map((d) => fmt(d.value)), fs) + 8;
+    const x = d3.scaleLinear([0, max ?? (d3.max(items, (d) => d.value) || 1)], [0, Math.max(10, W - labW - valW - 4)]);
+    const g = svg.selectAll('g.row').data(items).join('g').attr('transform', (d, i) => `translate(0,${i * rowH})`);
+    g.append('rect').attr('x', labW - 14).attr('y', rowH / 2 - 4).attr('width', 8).attr('height', 8).attr('rx', 2).attr('fill', (d) => d.swatch || 'none');
+    g.append('text').attr('x', labW - 20).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', fs).attr('fill', 'var(--color-fg)').text((d) => d.label);
+    g.append('rect').attr('class', 'f1-grow').attr('x', labW).attr('y', rowH / 2 - 7).attr('height', 14).attr('rx', 4)
+      .attr('width', (d) => Math.max(2, x(d.value))).attr('fill', (d) => d.color || color);
+    g.append('text').attr('x', (d) => labW + Math.max(2, x(d.value)) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)').text((d) => fmt(d.value));
+    g.append('rect').attr('x', 0).attr('width', W).attr('height', rowH).attr('fill', 'transparent')
+      .on('mousemove', (ev, d) => showTip(box, ev, d.tip)).on('mouseleave', () => hideTip(box));
+  };
+
+  // ---- race picker ----
+  const picker = $('picker');
+  picker.addEventListener('click', (ev) => { const b = ev.target.closest('button[data-round]'); if (b) dash.setParams({ round: Number(b.dataset.round) }); });
+
+  const fillTable = (table, rows, key, cells) => {
+    const tb = table.querySelector('tbody'); tb.replaceChildren();
+    rows.forEach((r) => {
+      const tr = document.createElement('tr'); tr.dataset.key = key(r);
+      cells.forEach((c) => { const td = document.createElement('td'); if (c.cls) td.className = c.cls; c.fill(td, r); tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  };
+  const barCell = (field, color, max) => ({ cls: 'n bar', fill: (td, r) => {
+    const w = document.createElement('div'); w.className = 'f1-cellbar';
+    const i = document.createElement('i'); i.style.width = (Math.max(1, (r[field] || 0) / max * 48)) + 'px'; i.style.background = color;
+    const s = document.createElement('span'); s.textContent = pc(r[field]);
+    w.append(i, s); td.appendChild(w);
+  } });
+  const txt = (field, f, cls) => ({ cls, fill: (td, r) => { td.textContent = r[field] == null ? '—' : (f ? f(r[field], r) : r[field]); } });
+  const driverCell = (field) => ({ fill: (td, r) => { if (r.team_color) { const s = document.createElement('i'); s.className = 'f1-sw'; s.style.background = r.team_color; td.appendChild(s); } td.appendChild(document.createTextNode(r[field])); } });
+
+  // ================= RENDER =================
+  function render() {
+    const races = ok('races'), preds = ok('predictions');
+    const round = Number(dash.params().round ?? (races && races[0].round));
+    const where = `round=${round}`;
+    const race = races && races.find((r) => r.round === round);
+    const field = preds ? preds.filter((r) => r.round === round).sort((a, b) => a.win_rank - b.win_rank) : null;
+
+    // lede (always visible)
+    const lede = $('lede'); lede.replaceChildren();
+    if (race && field) {
+      const a = field[0], b = field[1];
+      lede.append('For the ', span(race.gp, 'races', 'gp', where, 'f1-em'), ' on ', span(dateFmt(race.date), 'races', 'date', where), '. ',
+        span(a.driver, 'predictions', 'driver', `${where}&win_rank=1`, 'f1-em'), ' is the favourite at ', span(pc(a.p_win), 'predictions', 'p_win', `${where}&win_rank=1`, 'f1-em'),
+        ', just ahead of ', span(b.driver, 'predictions', 'driver', `${where}&win_rank=2`, 'f1-em'), ' on ', span(pc(b.p_win), 'predictions', 'p_win', `${where}&win_rank=2`), '. Odds are set before qualifying.');
+    } else lede.append(span('—', 'races', null, null, 'dash-skeleton'));
+
+    // picker
+    picker.replaceChildren();
+    (races || []).forEach((r) => { const b = document.createElement('button'); b.className = 'f1-pick'; b.dataset.round = r.round; b.setAttribute('aria-pressed', String(r.round === round)); b.textContent = `R${r.round} · ${r.gp}`; picker.appendChild(b); });
+
+    if (tab === 'race') renderRace(race, field, where);
+    if (tab === 'season') renderSeason(races);
+    if (tab === 'model') renderModel();
+  }
+
+  function renderRace(race, field, where) {
+    const pf = ok('pole_favourite');
+    if (field) {
+      const a = field[0], b = field[1], w1 = `${where}&win_rank=1`, w2 = `${where}&win_rank=2`;
+      setText('k-win-name', a.driver, 'predictions', 'driver', w1); setText('k-win-p', pc(a.p_win), 'predictions', 'p_win', w1);
+      setText('k-win2', b.driver, 'predictions', 'driver', w2); setText('k-win2-p', pc(b.p_win), 'predictions', 'p_win', w2);
+    }
+    const pr = pf && pf.find((r) => r.round === Number(where.split('=')[1]));
+    if (pr) { setText('k-pole-name', pr.driver, 'pole_favourite', 'driver', where); setText('k-pole-p', pc(pr.p_pole), 'pole_favourite', 'p_pole', where); }
+    if (race) {
+      setText('k-qdate', dateFmt(race.quali_date), 'races', 'quali_date', where);
+      setText('k-plan', race.plan, 'races', 'plan', where);
+      const kc = $('k-comp'); kc.replaceChildren(span(race.compounds, 'races', 'compounds', where));
+      if (race.compounds_prev) kc.append(' · last year ', span(race.compounds_prev, 'races', 'compounds_prev', where));
+      setText('k-polewin', pc(race.pole_win_rate), 'races', 'pole_win_rate', where);
+      setText('k-editions', String(race.editions_since_2014), 'races', 'editions_since_2014', where);
+      setText('s-seasons', race.recent_seasons, 'races', 'recent_seasons', where);
+      setText('s-plan', race.plan, 'races', 'plan', where);
+      setText('s-detail', race.plan_detail, 'races', 'plan_detail', where);
+      setText('s-comp-note', race.compound_note || '', 'races', 'compound_note', where);
+      setText('s-alt', race.alt_note || '', 'races', 'alt_note', where);
+      setText('s-pit', race.pit_lane_time == null ? '—' : `${num1(race.pit_lane_time)} s`, 'races', 'pit_lane_time', where);
+      setText('s-g1', race.gain_1stop == null ? '—' : signed(race.gain_1stop), 'races', 'gain_1stop', where);
+      setText('s-g2', race.gain_2stop == null ? '—' : signed(race.gain_2stop), 'races', 'gain_2stop', where);
+      setText('q-note', race.quali_note, 'races', 'quali_note', where);
+      setText('q-fr', pc(race.front_row_win_rate), 'races', 'front_row_win_rate', where);
+      setText('q-avg', num1(race.winner_avg_grid), 'races', 'winner_avg_grid', where);
+      setText('q-change', num1(race.mean_abs_change), 'races', 'mean_abs_change', where);
+    }
+
+    // win chart
+    const cw = $('chart-win'); clearChart(cw, 'predictions');
+    if (field) hbars(cw, field.slice(0, 8).map((r) => ({ label: r.driver, value: r.p_win, swatch: r.team_color,
+      tip: [{ text: `${r.driver} · ${r.team}` }, { text: `Win ${pc(r.p_win)}`, color: dash.colors[0] }, { text: `Pole ${pc(r.p_pole)}`, color: dash.colors[1] }, { text: `Podium ${pc(r.p_podium)}`, color: dash.colors[2] }] })),
+      { fmt: pc, color: dash.colors[0] });
+
+    // pole chart
+    const cp = $('chart-pole'); clearChart(cp, 'predictions');
+    if (field) hbars(cp, [...field].sort((a, b) => b.p_pole - a.p_pole).slice(0, 5).map((r) => ({ label: r.driver, value: r.p_pole, swatch: r.team_color,
+      tip: [{ text: `${r.driver} · ${r.team}` }, { text: `Pole ${pc(r.p_pole)}`, color: dash.colors[1] }] })), { fmt: pc, color: dash.colors[1] });
+
+    // pit window chart
+    const cwin = $('chart-window'); clearChart(cwin, 'races');
+    if (race && cwin.clientWidth) {
+      const W = cwin.clientWidth, fs = capSize();
+      const rows = [
+        { name: 'One-stop', bands: race.w1_mid != null ? [[race.w1_lo, race.w1_mid, race.w1_hi, 'first stop']] : [] },
+        { name: 'Two-stop', bands: race.w2a_mid != null ? [[race.w2a_lo, race.w2a_mid, race.w2a_hi, 'first stop'], [race.w2b_lo, race.w2b_mid, race.w2b_hi, 'second stop']] : [] },
+      ];
+      const H = 84, svg = d3.select(cwin).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+      const lab = measure(svg, rows.map((r) => r.name), fs) + 12;
+      const x = d3.scaleLinear([0, race.laps], [lab, W - 12]);
+      const ax = svg.append('g').attr('transform', `translate(0,${H - 22})`).call(d3.axisBottom(x).ticks(Math.min(8, Math.floor(W / 60))).tickSizeOuter(0)).attr('font-size', null).attr('font-family', null);
+      ax.selectAll('text').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)');
+      ax.selectAll('line,path').attr('stroke', 'var(--cds-chart-axis)');
+      rows.forEach((r, i) => {
+        const y = 8 + i * 30;
+        svg.append('text').attr('x', 0).attr('y', y + 9).attr('dy', '0.35em').attr('font-size', fs).attr('fill', 'var(--color-fg)').text(r.name);
+        svg.append('rect').attr('x', x(0)).attr('y', y + 8).attr('width', x(race.laps) - x(0)).attr('height', 2).attr('fill', 'var(--cds-chart-grid)');
+        if (!r.bands.length) svg.append('text').attr('x', x(0) + 4).attr('y', y + 2).attr('font-size', fs).attr('fill', 'var(--color-fg-muted)').text('too few recent stops to show');
+        r.bands.forEach(([lo, mid, hi, what]) => {
+          const g = svg.append('g');
+          g.append('rect').attr('x', x(lo)).attr('y', y).attr('width', Math.max(4, x(hi) - x(lo))).attr('height', 18).attr('rx', 4).attr('fill', dash.colors[i === 0 ? 0 : 3]).attr('opacity', 0.35);
+          g.append('rect').attr('x', x(mid) - 1.5).attr('y', y - 2).attr('width', 3).attr('height', 22).attr('rx', 1.5).attr('fill', dash.colors[i === 0 ? 0 : 3]);
+          g.append('rect').attr('x', x(lo) - 6).attr('y', y - 4).attr('width', Math.max(16, x(hi) - x(lo) + 12)).attr('height', 26).attr('fill', 'transparent')
+            .on('mousemove', (ev) => showTip(cwin, ev, [{ text: `${r.name}, ${what}` }, { text: `Typical lap ${mid} · middle half laps ${lo}–${hi}` }]))
+            .on('mouseleave', () => hideTip(cwin));
+        });
+      });
+    }
+
+    // stop-count share bar
+    const cs = $('chart-stops'); clearChart(cs, 'races');
+    if (race && cs.clientWidth) {
+      const W = cs.clientWidth, fs = capSize();
+      const parts = [{ k: '1 stop', v: race.share_1stop, c: dash.colors[0] }, { k: '2 stops', v: race.share_2stop, c: dash.colors[3] }, { k: '3+ stops', v: race.share_3stop, c: dash.colors[4] }].filter((p) => p.v > 0);
+      const H = 52, svg = d3.select(cs).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+      svg.append('text').attr('x', 0).attr('y', 10).attr('font-size', fs).attr('fill', 'var(--color-fg-muted)').text('How top-10 finishers ran their race');
+      let x0 = 0; const sx = d3.scaleLinear([0, 1], [0, W]);
+      parts.forEach((p) => {
+        const w = Math.max(0, sx(p.v) - 2);
+        svg.append('rect').attr('x', x0).attr('y', 18).attr('width', w).attr('height', 14).attr('rx', 4).attr('fill', p.c)
+          .on('mousemove', (ev) => showTip(cs, ev, [{ text: p.k }, { text: `${pc(p.v)} of top-10 finishers`, color: p.c }])).on('mouseleave', () => hideTip(cs));
+        const label = `${p.k} ${pc(p.v)}`;
+        const t = svg.append('text').attr('x', x0).attr('y', 46).attr('font-size', fs).attr('fill', 'var(--color-fg)').text(label);
+        if (t.node().getComputedTextLength() > w + 1) t.remove();
+        x0 += sx(p.v);
+      });
+    }
+
+    // history table
+    const hist = ok('circuit_history');
+    fillTable($('t-history'), hist ? hist.filter((r) => `round=${r.round}` === where) : [], (r) => `${r.round},${r.season}`, [
+      txt('season'), txt('pole'), txt('pole_team'), txt('winner'), txt('winner_grid', null, 'n'), txt('winner_stops', null, 'n'),
+      { fill: (td, r) => { td.textContent = r.pole_won; td.className = r.pole_won === 'Yes' ? 'f1-yes' : 'f1-no'; } },
+    ]);
+
+    // field table
+    fillTable($('t-field'), field || [], (r) => `${r.round},${r.driver_id}`, [
+      driverCell('driver'), txt('team'), barCell('p_win', dash.colors[0], d3.max(field || [], (r) => r.p_win) || 1),
+      barCell('p_pole', dash.colors[1], d3.max(field || [], (r) => r.p_pole) || 1), barCell('p_podium', dash.colors[2], 1),
+      txt('pts_last5', num1, 'n'), txt('circ_starts', null, 'n'), txt('circ_avg_finish', num1, 'n'),
+    ]);
+  }
+
+  function renderSeason(races) {
+    const title = ok('title'), st = ok('standings'), season = ok('season'), hits = ok('season_hits');
+    const tt = $('title-text'); tt.replaceChildren();
+    const tl = $('title-list'); tl.replaceChildren();
+    if (title && title.length) {
+      const t = title[0], next = races && races[0];
+      tt.append(span(t.leader, 'title', 'leader', 'rival=' + encodeURIComponent(t.rival), 'f1-em'), ' leads by ',
+        span(String(t.gap), 'title', 'gap', 'rival=' + encodeURIComponent(t.rival), 'f1-em'), ' points over ', span(t.rival, 'title', 'rival', 'rival=' + encodeURIComponent(t.rival)),
+        ' with ', span(String(t.max_points_left), 'title', 'max_points_left', 'rival=' + encodeURIComponent(t.rival)), ' points left in ',
+        span(String(t.races_left), 'title', 'races_left', 'rival=' + encodeURIComponent(t.rival)), ' races. ',
+        next ? 'The title can be decided at the ' : '', next ? span(next.gp, 'races', 'gp', `round=${next.round}`) : '', next ? '. It is sealed there unless:' : '');
+      title.forEach((r) => {
+        const li = document.createElement('li'), w = 'rival=' + encodeURIComponent(r.rival);
+        if (r.worst_finish_if_rival_wins == null) { li.append(span(r.rival, 'title', 'rival', w), ' can still win it even if he does not win next time out.'); }
+        else li.append(span(r.rival, 'title', 'rival', w), ' wins and ', span(r.leader, 'title', 'leader', w), ' finishes outside the top ',
+          span(String(r.worst_finish_if_rival_wins), 'title', 'worst_finish_if_rival_wins', w, 'f1-em'), ' (or retires).');
+        tl.appendChild(li);
+      });
+    }
+    const cst = $('chart-standings'); clearChart(cst, 'standings');
+    if (st) hbars(cst, st.slice(0, 10).map((r) => ({ label: r.driver, value: r.points, swatch: r.team_color,
+      tip: [{ text: `${ordinal(r.pos)} · ${r.driver} · ${r.team}` }, { text: `${r.points} points · ${r.wins} wins · ${r.poles} poles` }] })),
+      { fmt: d3.format(','), color: dash.colors[0] });
+
+    const rn = $('rounds-note'); rn.replaceChildren();
+    const hs = (v, f) => { const s = span(String(v), 'season_hits', f, null, 'f1-em'); s.setAttribute('data-row', '0'); return s; };
+    if (hits && hits[0]) rn.append('The favourite won ', hs(hits[0].hits, 'hits'), ' of ', hs(hits[0].races, 'races'),
+      ' races, and the winner was in the model\u2019s top two in ', hs(hits[0].top2, 'top2'), '. Each pick was made before the weekend, from earlier races only.');
+
+    fillTable($('t-season'), season || [], (r) => String(r.round), [
+      txt('round', null, 'n'), txt('gp'), txt('pole'), txt('winner'), txt('winner_grid', null, 'n'), txt('model_pick'),
+      txt('pick_p', pc, 'n'), txt('winner_rank', null, 'n'),
+      { fill: (td, r) => { td.textContent = r.pick_won ?? '—'; td.className = r.pick_won === 'Yes' ? 'f1-yes' : 'f1-no'; } },
+    ]);
+    fillTable($('t-standings'), st || [], (r) => r.driver_id, [
+      txt('pos', null, 'n'), driverCell('driver'), txt('team'), txt('points', d3.format(','), 'n'), txt('wins', null, 'n'), txt('podiums', null, 'n'),
+      txt('poles', null, 'n'), txt('dnfs', null, 'n'), txt('last5'),
+    ]);
+  }
+
+  function renderModel() {
+    const bt = ok('backtest'), bs = ok('backtest_seasons'), cal = ok('calibration'), imp = ok('importance');
+    $('lg-model').style.background = dash.colors[0]; $('lg-win').style.background = dash.colors[0]; $('lg-pod').style.background = dash.colors[2];
+    if (bt) {
+      const g = (id) => bt.find((r) => r.id === id);
+      const t1 = g('win_top1'), t3 = g('win_top3'), ll = g('win_llgain'), po = g('pole_top1');
+      setText('m-top1', pc(t1.model), 'backtest', 'model', 'id=win_top1'); setText('m-top1-b', pc(t1.baseline), 'backtest', 'baseline', 'id=win_top1');
+      setText('m-top3', pc(t3.model), 'backtest', 'model', 'id=win_top3'); setText('m-top3-b', pc(t3.baseline), 'backtest', 'baseline', 'id=win_top3');
+      setText('m-ll', d3.format('.2f')(ll.model), 'backtest', 'model', 'id=win_llgain');
+      setText('m-ll-lo', d3.format('.2f')(ll.model_lo), 'backtest', 'model_lo', 'id=win_llgain'); setText('m-ll-hi', d3.format('.2f')(ll.model_hi), 'backtest', 'model_hi', 'id=win_llgain');
+      setText('m-pole', pc(po.model), 'backtest', 'model', 'id=pole_top1'); setText('m-pole-b', pc(po.baseline), 'backtest', 'baseline', 'id=pole_top1');
+      const ml = $('model-lede'); ml.replaceChildren();
+      ml.append('Tested on ', span(String(t1.races), 'backtest', 'races', 'id=win_top1', 'f1-em'),
+        ' races, each predicted from earlier races only. The favourite wins about as often as a simple “back the in-form driver” rule, but the percentages are clearly sharper and well calibrated, which is what matters for odds.');
+    }
+    // seasons grouped bars
+    const csn = $('chart-seasons'); clearChart(csn, 'backtest_seasons');
+    if (bs && csn.clientWidth) {
+      const W = csn.clientWidth, H = 220, fs = capSize(), m = { t: 8, r: 8, b: 26, l: 40 };
+      const svg = d3.select(csn).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+      const x = d3.scaleBand(bs.map((r) => String(r.season)), [m.l, W - m.r]).padding(0.3);
+      const x2 = d3.scaleBand(['model', 'base'], [0, x.bandwidth()]).padding(0.1);
+      const y = d3.scaleLinear([0, 1], [H - m.b, m.t]);
+      svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+      const ya = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(d3.format('.0%')).tickSize(0)).attr('font-size', null).attr('font-family', null);
+      ya.select('.domain').remove(); ya.selectAll('text').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)');
+      const xa = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8)).attr('font-size', null).attr('font-family', null);
+      xa.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); xa.selectAll('text').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)');
+      bs.forEach((r) => {
+        [['model', r.model_top1, dash.colors[0]], ['base', r.baseline_top1, 'var(--cds-chart-muted)']].forEach(([k, v, c]) => {
+          svg.append('rect').attr('x', x(String(r.season)) + x2(k)).attr('y', y(v)).attr('width', Math.min(32, x2.bandwidth())).attr('height', Math.max(1, y(0) - y(v))).attr('rx', 4).attr('fill', c);
+        });
+        svg.append('rect').attr('x', x(String(r.season))).attr('y', m.t).attr('width', x.bandwidth()).attr('height', H - m.b - m.t).attr('fill', 'transparent')
+          .on('mousemove', (ev) => showTip(csn, ev, [{ text: `${r.season} · ${r.races} races` }, { text: `Model ${pc(r.model_top1)}`, color: dash.colors[0] }, { text: `Baseline ${pc(r.baseline_top1)}`, color: 'var(--cds-chart-muted)' }]))
+          .on('mouseleave', () => hideTip(csn));
+      });
+    }
+    // calibration
+    const cc = $('chart-calib'); clearChart(cc, 'calibration');
+    if (cal && cc.clientWidth) {
+      const W = cc.clientWidth, H = 270, fs = capSize(), m = { t: 8, r: 12, b: 44, l: 44 };
+      const svg = d3.select(cc).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+      const x = d3.scaleLinear([0, 1], [m.l, W - m.r]), y = d3.scaleLinear([0, 1], [H - m.b, m.t]);
+      svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+      svg.append('line').attr('x1', x(0)).attr('y1', y(0)).attr('x2', x(1)).attr('y2', y(1)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 4');
+      const ya = svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(d3.format('.0%')).tickSize(0).tickPadding(6)).attr('font-size', null).attr('font-family', null);
+      ya.select('.domain').remove(); ya.selectAll('text').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)');
+      const xa = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.min(5, Math.floor(W / 70))).tickFormat(d3.format('.0%')).tickSize(0).tickPadding(8)).attr('font-size', null).attr('font-family', null);
+      xa.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); xa.selectAll('text').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)');
+      svg.append('text').attr('x', W - m.r).attr('y', H - 2).attr('text-anchor', 'end').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)').text('Predicted chance');
+      svg.append('text').attr('x', m.l + 4).attr('y', m.t + 4).attr('dy', '0.7em').attr('font-size', fs).attr('fill', 'var(--color-fg-muted)').text('How often it happened');
+      [['Win', dash.colors[0]], ['Podium', dash.colors[2]]].forEach(([k, c]) => {
+        const pts = cal.filter((r) => r.model === k);
+        svg.append('path').datum(pts).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line((d) => x(d.predicted), (d) => y(d.actual)));
+        svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (d) => x(d.predicted)).attr('cy', (d) => y(d.actual)).attr('r', 4.5).attr('fill', c).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2)
+          .on('mousemove', (ev, d) => showTip(cc, ev, [{ text: `${k} · ${d.n} predictions` }, { text: `Predicted ${pc(d.predicted)} · happened ${pc(d.actual)}`, color: c }]))
+          .on('mouseleave', () => hideTip(cc));
+      });
+    }
+    const ci = $('chart-imp'); clearChart(ci, 'importance');
+    if (imp) hbars(ci, imp.map((r) => ({ label: r.feature, value: r.share, tip: [{ text: r.feature }, { text: `${pc(r.share)} of total gain` }] })), { fmt: pc, color: dash.colors[0] });
+  }
+
+  dash.onData(render);
+  const named = location.hash.slice(1);
+  if (['race', 'season', 'model'].includes(named)) showTab(named);
+})();
+</script>

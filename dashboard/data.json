@@ -1,0 +1,6425 @@
+{
+ "generated": "2026-10-26T21:02+00:00",
+ "season": 2026,
+ "data_through": {
+  "round": 18,
+  "gp": "united-states"
+ },
+ "drivers": {
+  "charles-leclerc": {
+   "name": "Charles Leclerc",
+   "last_name": "Leclerc",
+   "abbr": "LEC",
+   "number": 16,
+   "nationality": "monaco"
+  },
+  "max-verstappen": {
+   "name": "Max Verstappen",
+   "last_name": "Verstappen",
+   "abbr": "VER",
+   "number": 3,
+   "nationality": "netherlands"
+  },
+  "arvid-lindblad": {
+   "name": "Arvid Lindblad",
+   "last_name": "Lindblad",
+   "abbr": "LIN",
+   "number": 41,
+   "nationality": "united-kingdom"
+  },
+  "lance-stroll": {
+   "name": "Lance Stroll",
+   "last_name": "Stroll",
+   "abbr": "STR",
+   "number": 18,
+   "nationality": "canada"
+  },
+  "sergio-perez": {
+   "name": "Sergio P\u00e9rez",
+   "last_name": "P\u00e9rez",
+   "abbr": "PER",
+   "number": 11,
+   "nationality": "mexico"
+  },
+  "kimi-antonelli": {
+   "name": "Kimi Antonelli",
+   "last_name": "Antonelli",
+   "abbr": "ANT",
+   "number": 12,
+   "nationality": "italy"
+  },
+  "oscar-piastri": {
+   "name": "Oscar Piastri",
+   "last_name": "Piastri",
+   "abbr": "PIA",
+   "number": 81,
+   "nationality": "australia"
+  },
+  "daniel-ricciardo": {
+   "name": "Daniel Ricciardo",
+   "last_name": "Ricciardo",
+   "abbr": "RIC",
+   "number": null,
+   "nationality": "australia"
+  },
+  "franco-colapinto": {
+   "name": "Franco Colapinto",
+   "last_name": "Colapinto",
+   "abbr": "COL",
+   "number": 43,
+   "nationality": "argentina"
+  },
+  "nico-hulkenberg": {
+   "name": "Nico H\u00fclkenberg",
+   "last_name": "H\u00fclkenberg",
+   "abbr": "HUL",
+   "number": 27,
+   "nationality": "germany"
+  },
+  "valtteri-bottas": {
+   "name": "Valtteri Bottas",
+   "last_name": "Bottas",
+   "abbr": "BOT",
+   "number": 77,
+   "nationality": "finland"
+  },
+  "isack-hadjar": {
+   "name": "Isack Hadjar",
+   "last_name": "Hadjar",
+   "abbr": "HAD",
+   "number": 6,
+   "nationality": "france"
+  },
+  "alexander-albon": {
+   "name": "Alexander Albon",
+   "last_name": "Albon",
+   "abbr": "ALB",
+   "number": 23,
+   "nationality": "thailand"
+  },
+  "george-russell": {
+   "name": "George Russell",
+   "last_name": "Russell",
+   "abbr": "RUS",
+   "number": 63,
+   "nationality": "united-kingdom"
+  },
+  "lando-norris": {
+   "name": "Lando Norris",
+   "last_name": "Norris",
+   "abbr": "NOR",
+   "number": 4,
+   "nationality": "united-kingdom"
+  },
+  "fernando-alonso": {
+   "name": "Fernando Alonso",
+   "last_name": "Alonso",
+   "abbr": "ALO",
+   "number": 14,
+   "nationality": "spain"
+  },
+  "kevin-magnussen": {
+   "name": "Kevin Magnussen",
+   "last_name": "Magnussen",
+   "abbr": "MAG",
+   "number": 20,
+   "nationality": "denmark"
+  },
+  "liam-lawson": {
+   "name": "Liam Lawson",
+   "last_name": "Lawson",
+   "abbr": "LAW",
+   "number": 30,
+   "nationality": "new-zealand"
+  },
+  "oliver-bearman": {
+   "name": "Oliver Bearman",
+   "last_name": "Bearman",
+   "abbr": "BEA",
+   "number": 87,
+   "nationality": "united-kingdom"
+  },
+  "esteban-ocon": {
+   "name": "Esteban Ocon",
+   "last_name": "Ocon",
+   "abbr": "OCO",
+   "number": 31,
+   "nationality": "france"
+  },
+  "carlos-sainz-jr": {
+   "name": "Carlos Sainz Jr.",
+   "last_name": "Sainz Jr.",
+   "abbr": "SAI",
+   "number": 55,
+   "nationality": "spain"
+  },
+  "pierre-gasly": {
+   "name": "Pierre Gasly",
+   "last_name": "Gasly",
+   "abbr": "GAS",
+   "number": 10,
+   "nationality": "france"
+  },
+  "gabriel-bortoleto": {
+   "name": "Gabriel Bortoleto",
+   "last_name": "Bortoleto",
+   "abbr": "BOR",
+   "number": 5,
+   "nationality": "brazil"
+  },
+  "yuki-tsunoda": {
+   "name": "Yuki Tsunoda",
+   "last_name": "Tsunoda",
+   "abbr": "TSU",
+   "number": 22,
+   "nationality": "japan"
+  },
+  "lewis-hamilton": {
+   "name": "Lewis Hamilton",
+   "last_name": "Hamilton",
+   "abbr": "HAM",
+   "number": 44,
+   "nationality": "united-kingdom"
+  },
+  "sebastian-vettel": {
+   "name": "Sebastian Vettel",
+   "last_name": "Vettel",
+   "abbr": "VET",
+   "number": null,
+   "nationality": "germany"
+  }
+ },
+ "teams": {
+  "ferrari": {
+   "name": "Ferrari",
+   "color": "#E8002D"
+  },
+  "mercedes": {
+   "name": "Mercedes",
+   "color": "#00D2BE"
+  },
+  "alpine": {
+   "name": "Alpine",
+   "color": "#0093CC"
+  },
+  "aston-martin": {
+   "name": "Aston Martin",
+   "color": "#229971"
+  },
+  "audi": {
+   "name": "Audi",
+   "color": "#9C1B2F"
+  },
+  "williams": {
+   "name": "Williams",
+   "color": "#64C4FF"
+  },
+  "cadillac": {
+   "name": "Cadillac",
+   "color": "#C9A227"
+  },
+  "haas": {
+   "name": "Haas",
+   "color": "#B6BABD"
+  },
+  "mclaren": {
+   "name": "McLaren",
+   "color": "#FF8000"
+  },
+  "red-bull": {
+   "name": "Red Bull",
+   "color": "#3671C6"
+  },
+  "racing-bulls": {
+   "name": "Racing Bulls",
+   "color": "#6692FF"
+  }
+ },
+ "grands_prix": {
+  "japan": "Japanese GP",
+  "united-states": "United States GP",
+  "china": "Chinese GP",
+  "mexico": "Mexican GP",
+  "70th-anniversary": "70th Anniversary GP",
+  "netherlands": "Dutch GP",
+  "indianapolis": "Indy 500",
+  "hungary": "Hungarian GP",
+  "las-vegas": "Las Vegas GP",
+  "azerbaijan": "Azerbaijan GP",
+  "abu-dhabi": "Abu Dhabi GP",
+  "sao-paulo": "S\u00e3o Paulo GP",
+  "austria": "Austrian GP",
+  "morocco": "Moroccan GP",
+  "switzerland": "Swiss GP",
+  "singapore": "Singapore GP",
+  "barcelona-catalunya": "Barcelona-Catalunya GP",
+  "dallas": "Dallas GP",
+  "eifel": "Eifel GP",
+  "luxembourg": "Luxembourg GP",
+  "canada": "Canadian GP",
+  "india": "Indian GP",
+  "argentina": "Argentine GP",
+  "saudi-arabia": "Saudi Arabian GP",
+  "qatar": "Qatar GP",
+  "russia": "Russian GP",
+  "sakhir": "Sakhir GP",
+  "france": "French GP",
+  "germany": "German GP",
+  "portugal": "Portuguese GP",
+  "pescara": "Pescara GP",
+  "australia": "Australian GP",
+  "styria": "Styrian GP",
+  "monaco": "Monaco GP",
+  "miami": "Miami GP",
+  "spain": "Spanish GP",
+  "belgium": "Belgian GP",
+  "caesars-palace": "Caesars Palace GP",
+  "south-africa": "South African GP",
+  "malaysia": "Malaysian GP",
+  "united-states-west": "United States GP West",
+  "tuscany": "Tuscan GP",
+  "brazil": "Brazilian GP",
+  "emilia-romagna": "Emilia Romagna GP",
+  "europe": "European GP",
+  "italy": "Italian GP",
+  "bahrain": "Bahrain GP",
+  "turkey": "Turkish GP",
+  "sweden": "Swedish GP",
+  "detroit": "Detroit GP",
+  "pacific": "Pacific GP",
+  "korea": "Korean GP",
+  "great-britain": "British GP",
+  "san-marino": "San Marino GP"
+ },
+ "circuits": {
+  "shanghai": "Shanghai",
+  "rouen": "Rouen-Les-Essarts",
+  "zolder": "Zolder",
+  "hungaroring": "Hungaroring",
+  "nurburgring": "N\u00fcrburgring",
+  "yeongam": "Korea",
+  "indianapolis": "Indianapolis",
+  "bremgarten": "Bremgarten",
+  "aida": "Aida",
+  "silverstone": "Silverstone",
+  "madring": "Madring",
+  "las-vegas": "Las Vegas",
+  "zandvoort": "Zandvoort",
+  "riverside": "Riverside",
+  "baku": "Baku",
+  "estoril": "Estoril",
+  "spielberg": "Red Bull Ring",
+  "sebring": "Sebring",
+  "dijon": "Dijon-Prenois",
+  "paul-ricard": "Paul Ricard",
+  "mosport": "Mosport",
+  "sepang": "Sepang",
+  "mont-tremblant": "Mont-Tremblant",
+  "buddh": "Buddh",
+  "jarama": "Jarama",
+  "brands-hatch": "Brands Hatch",
+  "sirius": "Sirius",
+  "austin": "Americas",
+  "phoenix": "Phoenix",
+  "buenos-aires": "Juan y Oscar G\u00e1lvez",
+  "jerez": "Jerez",
+  "dallas": "Fair Park",
+  "avus": "AVUS",
+  "jeddah": "Jeddah",
+  "montreal": "Gilles Villeneuve",
+  "portimao": "Portim\u00e3o",
+  "interlagos": "Jos\u00e9 Carlos Pace",
+  "pedralbes": "Pedralbes",
+  "catalunya": "Catalunya",
+  "yas-marina": "Yas Marina",
+  "aintree": "Aintree",
+  "watkins-glen": "Watkins Glen",
+  "mexico-city": "Hermanos Rodr\u00edguez",
+  "pescara": "Pescara",
+  "monaco": "Monaco",
+  "miami": "Miami",
+  "istanbul": "\u0130stanbul Park",
+  "donington": "Donington Park",
+  "zeltweg": "Zeltweg",
+  "suzuka": "Suzuka",
+  "spa-francorchamps": "Spa-Francorchamps",
+  "caesars-palace": "Caesars Palace",
+  "valencia": "Valencia",
+  "hockenheimring": "Hockenheimring",
+  "bugatti": "Bugatti",
+  "ain-diab": "Ain-Diab",
+  "marina-bay": "Marina Bay",
+  "reims": "Reims-Gueux",
+  "melbourne": "Albert Park",
+  "mugello": "Mugello",
+  "imola": "Enzo e Dino Ferrari",
+  "nivelles": "Nivelles-Baulers",
+  "monza": "Monza",
+  "clermont-ferrand": "Charade",
+  "adelaide": "Adelaide",
+  "jacarepagua": "Nelson Piquet",
+  "long-beach": "Long Beach",
+  "bahrain": "Bahrain",
+  "monsanto": "Monsanto",
+  "detroit": "Detroit",
+  "montjuic": "Montju\u00efc",
+  "anderstorp": "Anderstorp Raceway",
+  "east-london": "Prince George",
+  "porto": "Boavista",
+  "magny-cours": "Magny-Cours",
+  "kyalami": "Kyalami",
+  "fuji": "Fuji",
+  "lusail": "Lusail"
+ },
+ "upcoming": [
+  {
+   "race_id": 1168,
+   "round": 19,
+   "gp": "mexico",
+   "gp_name": "Mexican Grand Prix",
+   "official_name": "Formula 1 Gran Premio de la Ciudad de M\u00e9xico 2026",
+   "date": "2026-11-01",
+   "quali_date": "2026-10-31",
+   "circuit": {
+    "name": "Hermanos Rodr\u00edguez",
+    "full_name": "Aut\u00f3dromo Hermanos Rodr\u00edguez",
+    "place": "Mexico City",
+    "country": "mexico"
+   },
+   "circuit_id": "mexico-city",
+   "laps": 71,
+   "length_km": 4.304,
+   "turns": 17,
+   "drivers": [
+    {
+     "id": "kimi-antonelli",
+     "team": "mercedes",
+     "p_win": 0.3621,
+     "p_pole": 0.3813,
+     "p_podium": 0.591,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 6.0,
+     "pts_last5": 18.6
+    },
+    {
+     "id": "max-verstappen",
+     "team": "red-bull",
+     "p_win": 0.3255,
+     "p_pole": 0.2126,
+     "p_podium": 0.6396,
+     "circ_starts": 5,
+     "circ_wins": 3,
+     "circ_avg_finish": 2.4,
+     "pts_last5": 20.2
+    },
+    {
+     "id": "charles-leclerc",
+     "team": "ferrari",
+     "p_win": 0.0724,
+     "p_pole": 0.0709,
+     "p_podium": 0.3439,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 3.8,
+     "pts_last5": 14.4
+    },
+    {
+     "id": "lewis-hamilton",
+     "team": "ferrari",
+     "p_win": 0.0696,
+     "p_pole": 0.0648,
+     "p_podium": 0.3451,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 3.6,
+     "pts_last5": 8.6
+    },
+    {
+     "id": "george-russell",
+     "team": "mercedes",
+     "p_win": 0.0628,
+     "p_pole": 0.1344,
+     "p_podium": 0.3615,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 7.6,
+     "pts_last5": 8.2
+    },
+    {
+     "id": "isack-hadjar",
+     "team": "red-bull",
+     "p_win": 0.0455,
+     "p_pole": 0.0652,
+     "p_podium": 0.2671,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.0,
+     "pts_last5": 8.4
+    },
+    {
+     "id": "lando-norris",
+     "team": "mclaren",
+     "p_win": 0.0357,
+     "p_pole": 0.0324,
+     "p_podium": 0.2482,
+     "circ_starts": 5,
+     "circ_wins": 1,
+     "circ_avg_finish": 5.4,
+     "pts_last5": 7.8
+    },
+    {
+     "id": "oscar-piastri",
+     "team": "mclaren",
+     "p_win": 0.0119,
+     "p_pole": 0.0154,
+     "p_podium": 0.1139,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 7.0,
+     "pts_last5": 5.6
+    },
+    {
+     "id": "liam-lawson",
+     "team": "racing-bulls",
+     "p_win": 0.0033,
+     "p_pole": 0.0043,
+     "p_podium": 0.0186,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 18.5,
+     "pts_last5": 4.4
+    },
+    {
+     "id": "pierre-gasly",
+     "team": "alpine",
+     "p_win": 0.002,
+     "p_pole": 0.0035,
+     "p_podium": 0.0185,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.2,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "arvid-lindblad",
+     "team": "racing-bulls",
+     "p_win": 0.0019,
+     "p_pole": 0.003,
+     "p_podium": 0.0154,
+     "circ_starts": 0,
+     "circ_wins": 0,
+     "circ_avg_finish": null,
+     "pts_last5": 1.8
+    },
+    {
+     "id": "nico-hulkenberg",
+     "team": "audi",
+     "p_win": 0.0012,
+     "p_pole": 0.0013,
+     "p_podium": 0.0053,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.8,
+     "pts_last5": 1.0
+    },
+    {
+     "id": "gabriel-bortoleto",
+     "team": "audi",
+     "p_win": 0.0009,
+     "p_pole": 0.0013,
+     "p_podium": 0.0048,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "franco-colapinto",
+     "team": "alpine",
+     "p_win": 0.0009,
+     "p_pole": 0.0018,
+     "p_podium": 0.0072,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 14.0,
+     "pts_last5": 1.2
+    },
+    {
+     "id": "oliver-bearman",
+     "team": "haas",
+     "p_win": 0.0007,
+     "p_pole": 0.0012,
+     "p_podium": 0.0045,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 4.0,
+     "pts_last5": 0.4
+    },
+    {
+     "id": "esteban-ocon",
+     "team": "haas",
+     "p_win": 0.0007,
+     "p_pole": 0.001,
+     "p_podium": 0.0032,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.6,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "carlos-sainz-jr",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0011,
+     "p_podium": 0.0025,
+     "circ_starts": 5,
+     "circ_wins": 1,
+     "circ_avg_finish": 6.6,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "alexander-albon",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0008,
+     "p_podium": 0.0023,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.8,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "sergio-perez",
+     "team": "cadillac",
+     "p_win": 0.0005,
+     "p_pole": 0.0007,
+     "p_podium": 0.0017,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.2,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "valtteri-bottas",
+     "team": "cadillac",
+     "p_win": 0.0005,
+     "p_pole": 0.0007,
+     "p_podium": 0.0018,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.4,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "fernando-alonso",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.0013,
+     "p_podium": 0.002,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 18.2,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "lance-stroll",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.001,
+     "p_podium": 0.0019,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 14.2,
+     "pts_last5": 0.0
+    }
+   ],
+   "strategy": {
+    "circuit_id": "mexico-city",
+    "editions_recent": [
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "stop_share": {
+     "1": 0.586,
+     "2": 0.371,
+     "3": 0.043
+    },
+    "stop_share_top10": {
+     "1": 0.6,
+     "2": 0.35,
+     "3": 0.05
+    },
+    "winner_stops": [
+     {
+      "season": 2022,
+      "stops": 1
+     },
+     {
+      "season": 2023,
+      "stops": 3
+     },
+     {
+      "season": 2024,
+      "stops": 1
+     },
+     {
+      "season": 2025,
+      "stops": 1
+     }
+    ],
+    "by_stops": [
+     {
+      "stops": 1,
+      "avg_gain": 1.1,
+      "avg_finish": 8.97,
+      "n": 40.0
+     },
+     {
+      "stops": 2,
+      "avg_gain": 0.0,
+      "avg_finish": 9.48,
+      "n": 25.0
+     }
+    ],
+    "typical_stops": 1,
+    "windows": {
+     "1stop_1": [
+      28,
+      30,
+      34
+     ],
+     "2stop_1": [
+      24,
+      25,
+      31
+     ],
+     "2stop_2": [
+      34,
+      40,
+      48
+     ]
+    },
+    "pit_lane_time": 22.8,
+    "pole_win_rate": 0.5,
+    "front_row_win_rate": 0.7,
+    "winner_avg_grid": 1.8,
+    "deepest_winner": [
+     3,
+     2019
+    ],
+    "mean_abs_change": 2.65,
+    "n_editions_2014": 10,
+    "history": [
+     {
+      "season": 2025,
+      "pole": "lando-norris",
+      "pole_team": "mclaren",
+      "pole_time": 75.586,
+      "winner": "lando-norris",
+      "winner_team": "mclaren",
+      "winner_grid": 1
+     },
+     {
+      "season": 2024,
+      "pole": "carlos-sainz-jr",
+      "pole_team": "ferrari",
+      "pole_time": 75.946,
+      "winner": "carlos-sainz-jr",
+      "winner_team": "ferrari",
+      "winner_grid": 1
+     },
+     {
+      "season": 2023,
+      "pole": "charles-leclerc",
+      "pole_team": "ferrari",
+      "pole_time": 77.166,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 3
+     },
+     {
+      "season": 2022,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 77.775,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2021,
+      "pole": "valtteri-bottas",
+      "pole_team": "mercedes",
+      "pole_time": 75.875,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 3
+     },
+     {
+      "season": 2019,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 74.758,
+      "winner": "lewis-hamilton",
+      "winner_team": "mercedes",
+      "winner_grid": 3
+     },
+     {
+      "season": 2018,
+      "pole": "daniel-ricciardo",
+      "pole_team": "red-bull",
+      "pole_time": 74.759,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 2
+     },
+     {
+      "season": 2017,
+      "pole": "sebastian-vettel",
+      "pole_team": "ferrari",
+      "pole_time": 76.488,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 2
+     }
+    ],
+    "compounds": {
+     "set": "C3 / C4 / C5",
+     "note": "No gap between compounds this year (2025 ran C2 hard). The hard is softer, so it is a real race option rather than a tyre teams avoid."
+    },
+    "recommendation": {
+     "plan": "One-stop",
+     "detail": "Pit around lap 30 (top-10 runners stopped between laps 28 and 34).",
+     "quali": "Qualifying matters, but winners do come from the second and third rows, so a strong race car can recover.",
+     "alt": "Recently, one-stoppers gained more places on average (+1.1 vs +0.0).",
+     "compound_note": "No gap between compounds this year (2025 ran C2 hard). The hard is softer, so it is a real race option rather than a tyre teams avoid."
+    }
+   }
+  },
+  {
+   "race_id": 1169,
+   "round": 20,
+   "gp": "sao-paulo",
+   "gp_name": "S\u00e3o Paulo Grand Prix",
+   "official_name": "Formula 1 MSC Cruises Grande Pr\u00eamio de S\u00e3o Paulo 2026",
+   "date": "2026-11-08",
+   "quali_date": "2026-11-07",
+   "circuit": {
+    "name": "Jos\u00e9 Carlos Pace",
+    "full_name": "Aut\u00f3dromo Jos\u00e9 Carlos Pace",
+    "place": "S\u00e3o Paulo",
+    "country": "brazil"
+   },
+   "circuit_id": "interlagos",
+   "laps": 71,
+   "length_km": 4.309,
+   "turns": 15,
+   "drivers": [
+    {
+     "id": "kimi-antonelli",
+     "team": "mercedes",
+     "p_win": 0.3145,
+     "p_pole": 0.3506,
+     "p_podium": 0.6251,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 2.0,
+     "pts_last5": 18.6
+    },
+    {
+     "id": "max-verstappen",
+     "team": "red-bull",
+     "p_win": 0.3006,
+     "p_pole": 0.2189,
+     "p_podium": 0.6018,
+     "circ_starts": 5,
+     "circ_wins": 2,
+     "circ_avg_finish": 2.6,
+     "pts_last5": 20.2
+    },
+    {
+     "id": "lewis-hamilton",
+     "team": "ferrari",
+     "p_win": 0.0972,
+     "p_pole": 0.0681,
+     "p_podium": 0.3486,
+     "circ_starts": 5,
+     "circ_wins": 1,
+     "circ_avg_finish": 8.4,
+     "pts_last5": 8.6
+    },
+    {
+     "id": "charles-leclerc",
+     "team": "ferrari",
+     "p_win": 0.086,
+     "p_pole": 0.0728,
+     "p_podium": 0.2895,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.2,
+     "pts_last5": 14.4
+    },
+    {
+     "id": "george-russell",
+     "team": "mercedes",
+     "p_win": 0.0708,
+     "p_pole": 0.1468,
+     "p_podium": 0.3955,
+     "circ_starts": 5,
+     "circ_wins": 1,
+     "circ_avg_finish": 8.6,
+     "pts_last5": 8.2
+    },
+    {
+     "id": "lando-norris",
+     "team": "mclaren",
+     "p_win": 0.0545,
+     "p_pole": 0.0436,
+     "p_podium": 0.247,
+     "circ_starts": 5,
+     "circ_wins": 1,
+     "circ_avg_finish": 8.0,
+     "pts_last5": 7.8
+    },
+    {
+     "id": "isack-hadjar",
+     "team": "red-bull",
+     "p_win": 0.0493,
+     "p_pole": 0.0537,
+     "p_podium": 0.2822,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.0,
+     "pts_last5": 8.4
+    },
+    {
+     "id": "oscar-piastri",
+     "team": "mclaren",
+     "p_win": 0.013,
+     "p_pole": 0.0183,
+     "p_podium": 0.1139,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 9.0,
+     "pts_last5": 5.6
+    },
+    {
+     "id": "liam-lawson",
+     "team": "racing-bulls",
+     "p_win": 0.0033,
+     "p_pole": 0.0041,
+     "p_podium": 0.0254,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.0,
+     "pts_last5": 4.4
+    },
+    {
+     "id": "pierre-gasly",
+     "team": "alpine",
+     "p_win": 0.002,
+     "p_pole": 0.0038,
+     "p_podium": 0.0195,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.2,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "arvid-lindblad",
+     "team": "racing-bulls",
+     "p_win": 0.0019,
+     "p_pole": 0.0031,
+     "p_podium": 0.0162,
+     "circ_starts": 0,
+     "circ_wins": 0,
+     "circ_avg_finish": null,
+     "pts_last5": 1.8
+    },
+    {
+     "id": "nico-hulkenberg",
+     "team": "audi",
+     "p_win": 0.0011,
+     "p_pole": 0.0018,
+     "p_podium": 0.0048,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 15.6,
+     "pts_last5": 1.0
+    },
+    {
+     "id": "gabriel-bortoleto",
+     "team": "audi",
+     "p_win": 0.0008,
+     "p_pole": 0.0018,
+     "p_podium": 0.0037,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 21.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "franco-colapinto",
+     "team": "alpine",
+     "p_win": 0.0008,
+     "p_pole": 0.0021,
+     "p_podium": 0.007,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 18.0,
+     "pts_last5": 1.2
+    },
+    {
+     "id": "oliver-bearman",
+     "team": "haas",
+     "p_win": 0.0007,
+     "p_pole": 0.0014,
+     "p_podium": 0.0044,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 9.0,
+     "pts_last5": 0.4
+    },
+    {
+     "id": "esteban-ocon",
+     "team": "haas",
+     "p_win": 0.0007,
+     "p_pole": 0.0012,
+     "p_podium": 0.0033,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.0,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "carlos-sainz-jr",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0015,
+     "p_podium": 0.0023,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 9.8,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "fernando-alonso",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.0015,
+     "p_podium": 0.0023,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 9.0,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "sergio-perez",
+     "team": "cadillac",
+     "p_win": 0.0005,
+     "p_pole": 0.0009,
+     "p_podium": 0.0018,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 7.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "alexander-albon",
+     "team": "williams",
+     "p_win": 0.0004,
+     "p_pole": 0.0014,
+     "p_podium": 0.0021,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 16.4,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "valtteri-bottas",
+     "team": "cadillac",
+     "p_win": 0.0004,
+     "p_pole": 0.0013,
+     "p_podium": 0.0017,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.4,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "lance-stroll",
+     "team": "aston-martin",
+     "p_win": 0.0004,
+     "p_pole": 0.0014,
+     "p_podium": 0.0019,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 14.6,
+     "pts_last5": 0.0
+    }
+   ],
+   "strategy": {
+    "circuit_id": "interlagos",
+    "editions_recent": [
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "stop_share": {
+     "1": 0.095,
+     "2": 0.508,
+     "3": 0.397
+    },
+    "stop_share_top10": {
+     "1": 0.125,
+     "2": 0.5,
+     "3": 0.375
+    },
+    "winner_stops": [
+     {
+      "season": 2022,
+      "stops": 2
+     },
+     {
+      "season": 2023,
+      "stops": 3
+     },
+     {
+      "season": 2024,
+      "stops": 1
+     },
+     {
+      "season": 2025,
+      "stops": 2
+     }
+    ],
+    "by_stops": [
+     {
+      "stops": 2,
+      "avg_gain": 0.0,
+      "avg_finish": 8.52,
+      "n": 31.0
+     },
+     {
+      "stops": 3,
+      "avg_gain": 2.26,
+      "avg_finish": 8.7,
+      "n": 23.0
+     }
+    ],
+    "typical_stops": 2,
+    "windows": {
+     "2stop_1": [
+      24,
+      28,
+      29
+     ],
+     "2stop_2": [
+      33,
+      44,
+      48
+     ]
+    },
+    "pit_lane_time": 23.8,
+    "pole_win_rate": 0.727,
+    "front_row_win_rate": 0.818,
+    "winner_avg_grid": 3.36,
+    "deepest_winner": [
+     17,
+     2024
+    ],
+    "mean_abs_change": 3.0,
+    "n_editions_2014": 11,
+    "history": [
+     {
+      "season": 2025,
+      "pole": "lando-norris",
+      "pole_team": "mclaren",
+      "pole_time": 69.511,
+      "winner": "lando-norris",
+      "winner_team": "mclaren",
+      "winner_grid": 1
+     },
+     {
+      "season": 2024,
+      "pole": "lando-norris",
+      "pole_team": "mclaren",
+      "pole_time": 83.405,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 17
+     },
+     {
+      "season": 2023,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 70.162,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2022,
+      "pole": "kevin-magnussen",
+      "pole_team": "haas",
+      "pole_time": 71.41,
+      "winner": "george-russell",
+      "winner_team": "mercedes",
+      "winner_grid": 1
+     },
+     {
+      "season": 2021,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 68.372,
+      "winner": "lewis-hamilton",
+      "winner_team": "mercedes",
+      "winner_grid": 10
+     },
+     {
+      "season": 2019,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 67.503,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2018,
+      "pole": "lewis-hamilton",
+      "pole_team": "mercedes",
+      "pole_time": 67.281,
+      "winner": "lewis-hamilton",
+      "winner_team": "mercedes",
+      "winner_grid": 1
+     },
+     {
+      "season": 2017,
+      "pole": "valtteri-bottas",
+      "pole_team": "mercedes",
+      "pole_time": 68.322,
+      "winner": "sebastian-vettel",
+      "winner_team": "ferrari",
+      "winner_grid": 2
+     }
+    ],
+    "compounds": {
+     "set": "C3 / C4 / C5",
+     "note": "One step softer than 2025, when the hard was barely raced and most teams two-stopped on the softer tyres. Expect more stops, possibly all three compounds."
+    },
+    "recommendation": {
+     "plan": "Two-stop",
+     "detail": "Stops around laps 28 and 44.",
+     "quali": "Track position is everything here: qualifying decides most races, so an undercut is the main way to gain places.",
+     "alt": null,
+     "compound_note": "One step softer than 2025, when the hard was barely raced and most teams two-stopped on the softer tyres. Expect more stops, possibly all three compounds."
+    }
+   }
+  },
+  {
+   "race_id": 1170,
+   "round": 21,
+   "gp": "las-vegas",
+   "gp_name": "Las Vegas Grand Prix",
+   "official_name": "Formula 1 Heineken Las Vegas Grand Prix 2026",
+   "date": "2026-11-22",
+   "quali_date": "2026-11-21",
+   "circuit": {
+    "name": "Las Vegas",
+    "full_name": "Las Vegas Street Circuit",
+    "place": "Las Vegas",
+    "country": "united-states-of-america"
+   },
+   "circuit_id": "las-vegas",
+   "laps": 50,
+   "length_km": 6.201,
+   "turns": 17,
+   "drivers": [
+    {
+     "id": "kimi-antonelli",
+     "team": "mercedes",
+     "p_win": 0.3165,
+     "p_pole": 0.31,
+     "p_podium": 0.5771,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 3.0,
+     "pts_last5": 18.6
+    },
+    {
+     "id": "max-verstappen",
+     "team": "red-bull",
+     "p_win": 0.3063,
+     "p_pole": 0.2314,
+     "p_podium": 0.6,
+     "circ_starts": 3,
+     "circ_wins": 2,
+     "circ_avg_finish": 2.3,
+     "pts_last5": 20.2
+    },
+    {
+     "id": "lewis-hamilton",
+     "team": "ferrari",
+     "p_win": 0.0934,
+     "p_pole": 0.0666,
+     "p_podium": 0.3428,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 5.7,
+     "pts_last5": 8.6
+    },
+    {
+     "id": "charles-leclerc",
+     "team": "ferrari",
+     "p_win": 0.0854,
+     "p_pole": 0.0727,
+     "p_podium": 0.3469,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 3.3,
+     "pts_last5": 14.4
+    },
+    {
+     "id": "george-russell",
+     "team": "mercedes",
+     "p_win": 0.0604,
+     "p_pole": 0.1514,
+     "p_podium": 0.4378,
+     "circ_starts": 3,
+     "circ_wins": 1,
+     "circ_avg_finish": 3.7,
+     "pts_last5": 8.2
+    },
+    {
+     "id": "isack-hadjar",
+     "team": "red-bull",
+     "p_win": 0.0596,
+     "p_pole": 0.0538,
+     "p_podium": 0.3079,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 6.0,
+     "pts_last5": 8.4
+    },
+    {
+     "id": "lando-norris",
+     "team": "mclaren",
+     "p_win": 0.0498,
+     "p_pole": 0.0613,
+     "p_podium": 0.1946,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 16.0,
+     "pts_last5": 7.8
+    },
+    {
+     "id": "oscar-piastri",
+     "team": "mclaren",
+     "p_win": 0.0138,
+     "p_pole": 0.022,
+     "p_podium": 0.1034,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 12.7,
+     "pts_last5": 5.6
+    },
+    {
+     "id": "liam-lawson",
+     "team": "racing-bulls",
+     "p_win": 0.0034,
+     "p_pole": 0.005,
+     "p_podium": 0.0209,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 15.0,
+     "pts_last5": 4.4
+    },
+    {
+     "id": "pierre-gasly",
+     "team": "alpine",
+     "p_win": 0.002,
+     "p_pole": 0.0048,
+     "p_podium": 0.0157,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 15.0,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "arvid-lindblad",
+     "team": "racing-bulls",
+     "p_win": 0.0019,
+     "p_pole": 0.0034,
+     "p_podium": 0.0161,
+     "circ_starts": 0,
+     "circ_wins": 0,
+     "circ_avg_finish": null,
+     "pts_last5": 1.8
+    },
+    {
+     "id": "nico-hulkenberg",
+     "team": "audi",
+     "p_win": 0.0012,
+     "p_pole": 0.0017,
+     "p_podium": 0.0055,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.3,
+     "pts_last5": 1.0
+    },
+    {
+     "id": "franco-colapinto",
+     "team": "alpine",
+     "p_win": 0.0009,
+     "p_pole": 0.0023,
+     "p_podium": 0.0075,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 14.5,
+     "pts_last5": 1.2
+    },
+    {
+     "id": "gabriel-bortoleto",
+     "team": "audi",
+     "p_win": 0.0008,
+     "p_pole": 0.0019,
+     "p_podium": 0.0038,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 21.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "oliver-bearman",
+     "team": "haas",
+     "p_win": 0.0008,
+     "p_pole": 0.0015,
+     "p_podium": 0.0044,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.0,
+     "pts_last5": 0.4
+    },
+    {
+     "id": "esteban-ocon",
+     "team": "haas",
+     "p_win": 0.0007,
+     "p_pole": 0.0015,
+     "p_podium": 0.0033,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.0,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "fernando-alonso",
+     "team": "aston-martin",
+     "p_win": 0.0006,
+     "p_pole": 0.0017,
+     "p_podium": 0.0023,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.3,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "carlos-sainz-jr",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0016,
+     "p_podium": 0.0025,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 4.7,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "sergio-perez",
+     "team": "cadillac",
+     "p_win": 0.0005,
+     "p_pole": 0.0011,
+     "p_podium": 0.0018,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 6.5,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "lance-stroll",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.0016,
+     "p_podium": 0.002,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.7,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "alexander-albon",
+     "team": "williams",
+     "p_win": 0.0005,
+     "p_pole": 0.0016,
+     "p_podium": 0.002,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 18.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "valtteri-bottas",
+     "team": "cadillac",
+     "p_win": 0.0004,
+     "p_pole": 0.0014,
+     "p_podium": 0.0017,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 17.5,
+     "pts_last5": 0.0
+    }
+   ],
+   "strategy": {
+    "circuit_id": "las-vegas",
+    "editions_recent": [
+     2023,
+     2024,
+     2025
+    ],
+    "stop_share": {
+     "1": 0.404,
+     "2": 0.558,
+     "3": 0.038
+    },
+    "stop_share_top10": {
+     "1": 0.4,
+     "2": 0.567,
+     "3": 0.033
+    },
+    "winner_stops": [
+     {
+      "season": 2023,
+      "stops": 2
+     },
+     {
+      "season": 2024,
+      "stops": 2
+     },
+     {
+      "season": 2025,
+      "stops": 1
+     }
+    ],
+    "by_stops": [
+     {
+      "stops": 1,
+      "avg_gain": 1.29,
+      "avg_finish": 8.57,
+      "n": 21.0
+     },
+     {
+      "stops": 2,
+      "avg_gain": 1.0,
+      "avg_finish": 9.33,
+      "n": 27.0
+     }
+    ],
+    "typical_stops": 1,
+    "windows": {
+     "1stop_1": [
+      19,
+      22,
+      26
+     ],
+     "2stop_1": [
+      9,
+      11,
+      15
+     ],
+     "2stop_2": [
+      26,
+      27,
+      31
+     ]
+    },
+    "pit_lane_time": 21.6,
+    "pole_win_rate": 0.333,
+    "front_row_win_rate": 1.0,
+    "winner_avg_grid": 1.67,
+    "deepest_winner": [
+     2,
+     2023
+    ],
+    "mean_abs_change": 4.12,
+    "n_editions_2014": 3,
+    "history": [
+     {
+      "season": 2025,
+      "pole": "lando-norris",
+      "pole_team": "mclaren",
+      "pole_time": 107.934,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 2
+     },
+     {
+      "season": 2024,
+      "pole": "george-russell",
+      "pole_team": "mercedes",
+      "pole_time": 92.312,
+      "winner": "george-russell",
+      "winner_team": "mercedes",
+      "winner_grid": 1
+     },
+     {
+      "season": 2023,
+      "pole": "charles-leclerc",
+      "pole_team": "ferrari",
+      "pole_time": 92.726,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 2
+     }
+    ],
+    "compounds": {
+     "set": null,
+     "prev": "C3 / C4 / C5 (2025)",
+     "note": "Cold track temperatures make tyre warm-up, not wear, the main problem."
+    },
+    "recommendation": {
+     "plan": "One-stop",
+     "detail": "Pit around lap 22 (top-10 runners stopped between laps 19 and 26).",
+     "quali": "Every winner here has started from the front row (3 races so far), though not always from pole. Qualifying in the top two matters more than pole itself.",
+     "alt": "Recently, one-stoppers gained more places on average (+1.3 vs +1.0).",
+     "compound_note": "Cold track temperatures make tyre warm-up, not wear, the main problem."
+    }
+   }
+  },
+  {
+   "race_id": 1171,
+   "round": 22,
+   "gp": "qatar",
+   "gp_name": "Qatar Grand Prix",
+   "official_name": "Formula 1 Qatar Airways Qatar Grand Prix 2026",
+   "date": "2026-11-29",
+   "quali_date": "2026-11-28",
+   "circuit": {
+    "name": "Lusail",
+    "full_name": "Lusail International Circuit",
+    "place": "Lusail",
+    "country": "qatar"
+   },
+   "circuit_id": "lusail",
+   "laps": 57,
+   "length_km": 5.419,
+   "turns": 16,
+   "drivers": [
+    {
+     "id": "kimi-antonelli",
+     "team": "mercedes",
+     "p_win": 0.308,
+     "p_pole": 0.3324,
+     "p_podium": 0.6019,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 5.0,
+     "pts_last5": 18.6
+    },
+    {
+     "id": "max-verstappen",
+     "team": "red-bull",
+     "p_win": 0.2818,
+     "p_pole": 0.2358,
+     "p_podium": 0.6803,
+     "circ_starts": 4,
+     "circ_wins": 3,
+     "circ_avg_finish": 1.2,
+     "pts_last5": 20.2
+    },
+    {
+     "id": "lewis-hamilton",
+     "team": "ferrari",
+     "p_win": 0.1178,
+     "p_pole": 0.0694,
+     "p_podium": 0.3377,
+     "circ_starts": 4,
+     "circ_wins": 1,
+     "circ_avg_finish": 11.5,
+     "pts_last5": 8.6
+    },
+    {
+     "id": "charles-leclerc",
+     "team": "ferrari",
+     "p_win": 0.0846,
+     "p_pole": 0.0739,
+     "p_podium": 0.3534,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 5.8,
+     "pts_last5": 14.4
+    },
+    {
+     "id": "george-russell",
+     "team": "mercedes",
+     "p_win": 0.0671,
+     "p_pole": 0.1399,
+     "p_podium": 0.3534,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 7.8,
+     "pts_last5": 8.2
+    },
+    {
+     "id": "isack-hadjar",
+     "team": "red-bull",
+     "p_win": 0.0565,
+     "p_pole": 0.0635,
+     "p_podium": 0.2544,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 18.0,
+     "pts_last5": 8.4
+    },
+    {
+     "id": "lando-norris",
+     "team": "mclaren",
+     "p_win": 0.0562,
+     "p_pole": 0.0392,
+     "p_podium": 0.2115,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 6.5,
+     "pts_last5": 7.8
+    },
+    {
+     "id": "oscar-piastri",
+     "team": "mclaren",
+     "p_win": 0.0128,
+     "p_pole": 0.0173,
+     "p_podium": 0.118,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 2.3,
+     "pts_last5": 5.6
+    },
+    {
+     "id": "liam-lawson",
+     "team": "racing-bulls",
+     "p_win": 0.0035,
+     "p_pole": 0.0048,
+     "p_podium": 0.0216,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.3,
+     "pts_last5": 4.4
+    },
+    {
+     "id": "pierre-gasly",
+     "team": "alpine",
+     "p_win": 0.0021,
+     "p_pole": 0.0037,
+     "p_podium": 0.0181,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.0,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "arvid-lindblad",
+     "team": "racing-bulls",
+     "p_win": 0.0019,
+     "p_pole": 0.0031,
+     "p_podium": 0.0156,
+     "circ_starts": 0,
+     "circ_wins": 0,
+     "circ_avg_finish": null,
+     "pts_last5": 1.8
+    },
+    {
+     "id": "nico-hulkenberg",
+     "team": "audi",
+     "p_win": 0.0011,
+     "p_pole": 0.0019,
+     "p_podium": 0.0041,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 19.3,
+     "pts_last5": 1.0
+    },
+    {
+     "id": "gabriel-bortoleto",
+     "team": "audi",
+     "p_win": 0.0009,
+     "p_pole": 0.0019,
+     "p_podium": 0.0045,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "franco-colapinto",
+     "team": "alpine",
+     "p_win": 0.0008,
+     "p_pole": 0.0022,
+     "p_podium": 0.007,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 17.5,
+     "pts_last5": 1.2
+    },
+    {
+     "id": "esteban-ocon",
+     "team": "haas",
+     "p_win": 0.0008,
+     "p_pole": 0.0013,
+     "p_podium": 0.0032,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 12.0,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "oliver-bearman",
+     "team": "haas",
+     "p_win": 0.0007,
+     "p_pole": 0.0017,
+     "p_podium": 0.0033,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 21.0,
+     "pts_last5": 0.4
+    },
+    {
+     "id": "carlos-sainz-jr",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0014,
+     "p_podium": 0.0023,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 9.2,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "fernando-alonso",
+     "team": "aston-martin",
+     "p_win": 0.0006,
+     "p_pole": 0.0013,
+     "p_podium": 0.0022,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 5.8,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "alexander-albon",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0015,
+     "p_podium": 0.0021,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "sergio-perez",
+     "team": "cadillac",
+     "p_win": 0.0005,
+     "p_pole": 0.001,
+     "p_podium": 0.0018,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.7,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "lance-stroll",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.0014,
+     "p_podium": 0.0019,
+     "circ_starts": 4,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.8,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "valtteri-bottas",
+     "team": "cadillac",
+     "p_win": 0.0005,
+     "p_pole": 0.0013,
+     "p_podium": 0.0017,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.3,
+     "pts_last5": 0.0
+    }
+   ],
+   "strategy": {
+    "circuit_id": "lusail",
+    "editions_recent": [
+     2023,
+     2024,
+     2025
+    ],
+    "stop_share": {
+     "2": 0.32,
+     "3": 0.68
+    },
+    "stop_share_top10": {
+     "2": 0.333,
+     "3": 0.667
+    },
+    "winner_stops": [
+     {
+      "season": 2023,
+      "stops": 3
+     },
+     {
+      "season": 2024,
+      "stops": 3
+     },
+     {
+      "season": 2025,
+      "stops": 2
+     }
+    ],
+    "by_stops": [
+     {
+      "stops": 2,
+      "avg_gain": 0.47,
+      "avg_finish": 8.33,
+      "n": 15.0
+     },
+     {
+      "stops": 3,
+      "avg_gain": 1.06,
+      "avg_finish": 8.97,
+      "n": 34.0
+     }
+    ],
+    "typical_stops": 2,
+    "windows": {},
+    "pit_lane_time": 28.8,
+    "pole_win_rate": 0.5,
+    "front_row_win_rate": 0.75,
+    "winner_avg_grid": 1.75,
+    "deepest_winner": [
+     3,
+     2025
+    ],
+    "mean_abs_change": 3.27,
+    "n_editions_2014": 4,
+    "history": [
+     {
+      "season": 2025,
+      "pole": "oscar-piastri",
+      "pole_team": "mclaren",
+      "pole_time": 79.387,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 3
+     },
+     {
+      "season": 2024,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 80.52,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 2
+     },
+     {
+      "season": 2023,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 83.77799999999999,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2021,
+      "pole": "lewis-hamilton",
+      "pole_team": "mercedes",
+      "pole_time": 80.827,
+      "winner": "lewis-hamilton",
+      "winner_team": "mercedes",
+      "winner_grid": 1
+     }
+    ],
+    "compounds": {
+     "set": null,
+     "prev": "C1 / C2 / C3 (2025)",
+     "note": "In 2023 and 2025 a maximum stint length was imposed for tyre safety, which forced extra stops. Check whether a limit applies again."
+    },
+    "recommendation": {
+     "plan": "Two-stop",
+     "detail": "Recent Qatar races had a mandatory maximum stint length, so stop timing was set by the rule. If a limit applies again, plan stops to the limit; without one, two stops is the expected plan.",
+     "quali": "Qualifying matters, but winners do come from the second and third rows, so a strong race car can recover.",
+     "alt": null,
+     "compound_note": "In 2023 and 2025 a maximum stint length was imposed for tyre safety, which forced extra stops. Check whether a limit applies again."
+    }
+   }
+  },
+  {
+   "race_id": 1172,
+   "round": 23,
+   "gp": "abu-dhabi",
+   "gp_name": "Abu Dhabi Grand Prix",
+   "official_name": "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2026",
+   "date": "2026-12-06",
+   "quali_date": "2026-12-05",
+   "circuit": {
+    "name": "Yas Marina",
+    "full_name": "Yas Marina Circuit",
+    "place": "Abu Dhabi",
+    "country": "united-arab-emirates"
+   },
+   "circuit_id": "yas-marina",
+   "laps": 58,
+   "length_km": 5.281,
+   "turns": 16,
+   "drivers": [
+    {
+     "id": "kimi-antonelli",
+     "team": "mercedes",
+     "p_win": 0.3706,
+     "p_pole": 0.3953,
+     "p_podium": 0.5752,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 15.0,
+     "pts_last5": 18.6
+    },
+    {
+     "id": "max-verstappen",
+     "team": "red-bull",
+     "p_win": 0.3316,
+     "p_pole": 0.2232,
+     "p_podium": 0.6729,
+     "circ_starts": 5,
+     "circ_wins": 4,
+     "circ_avg_finish": 2.0,
+     "pts_last5": 20.2
+    },
+    {
+     "id": "lewis-hamilton",
+     "team": "ferrari",
+     "p_win": 0.0714,
+     "p_pole": 0.0627,
+     "p_podium": 0.3138,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.2,
+     "pts_last5": 8.6
+    },
+    {
+     "id": "charles-leclerc",
+     "team": "ferrari",
+     "p_win": 0.0682,
+     "p_pole": 0.0697,
+     "p_podium": 0.3561,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 4.2,
+     "pts_last5": 14.4
+    },
+    {
+     "id": "george-russell",
+     "team": "mercedes",
+     "p_win": 0.0593,
+     "p_pole": 0.1245,
+     "p_podium": 0.361,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 7.8,
+     "pts_last5": 8.2
+    },
+    {
+     "id": "isack-hadjar",
+     "team": "red-bull",
+     "p_win": 0.0382,
+     "p_pole": 0.057,
+     "p_podium": 0.2548,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 17.0,
+     "pts_last5": 8.4
+    },
+    {
+     "id": "lando-norris",
+     "team": "mclaren",
+     "p_win": 0.035,
+     "p_pole": 0.0303,
+     "p_podium": 0.2578,
+     "circ_starts": 5,
+     "circ_wins": 1,
+     "circ_avg_finish": 4.4,
+     "pts_last5": 7.8
+    },
+    {
+     "id": "oscar-piastri",
+     "team": "mclaren",
+     "p_win": 0.0116,
+     "p_pole": 0.0147,
+     "p_podium": 0.1146,
+     "circ_starts": 3,
+     "circ_wins": 0,
+     "circ_avg_finish": 6.0,
+     "pts_last5": 5.6
+    },
+    {
+     "id": "liam-lawson",
+     "team": "racing-bulls",
+     "p_win": 0.0032,
+     "p_pole": 0.0041,
+     "p_podium": 0.0199,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 17.5,
+     "pts_last5": 4.4
+    },
+    {
+     "id": "pierre-gasly",
+     "team": "alpine",
+     "p_win": 0.002,
+     "p_pole": 0.0034,
+     "p_podium": 0.0189,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.6,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "arvid-lindblad",
+     "team": "racing-bulls",
+     "p_win": 0.0018,
+     "p_pole": 0.0029,
+     "p_podium": 0.0164,
+     "circ_starts": 0,
+     "circ_wins": 0,
+     "circ_avg_finish": null,
+     "pts_last5": 1.8
+    },
+    {
+     "id": "nico-hulkenberg",
+     "team": "audi",
+     "p_win": 0.0011,
+     "p_pole": 0.0014,
+     "p_podium": 0.0052,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 13.0,
+     "pts_last5": 1.0
+    },
+    {
+     "id": "gabriel-bortoleto",
+     "team": "audi",
+     "p_win": 0.0009,
+     "p_pole": 0.0013,
+     "p_podium": 0.0051,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "franco-colapinto",
+     "team": "alpine",
+     "p_win": 0.0008,
+     "p_pole": 0.0018,
+     "p_podium": 0.0065,
+     "circ_starts": 2,
+     "circ_wins": 0,
+     "circ_avg_finish": 20.5,
+     "pts_last5": 1.2
+    },
+    {
+     "id": "oliver-bearman",
+     "team": "haas",
+     "p_win": 0.0008,
+     "p_pole": 0.0012,
+     "p_podium": 0.0046,
+     "circ_starts": 1,
+     "circ_wins": 0,
+     "circ_avg_finish": 12.0,
+     "pts_last5": 0.4
+    },
+    {
+     "id": "esteban-ocon",
+     "team": "haas",
+     "p_win": 0.0006,
+     "p_pole": 0.001,
+     "p_podium": 0.0035,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.8,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "carlos-sainz-jr",
+     "team": "williams",
+     "p_win": 0.0006,
+     "p_pole": 0.0011,
+     "p_podium": 0.0025,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 8.0,
+     "pts_last5": 0.2
+    },
+    {
+     "id": "fernando-alonso",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.001,
+     "p_podium": 0.0025,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 10.2,
+     "pts_last5": 0.8
+    },
+    {
+     "id": "alexander-albon",
+     "team": "williams",
+     "p_win": 0.0005,
+     "p_pole": 0.0008,
+     "p_podium": 0.0025,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.6,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "lance-stroll",
+     "team": "aston-martin",
+     "p_win": 0.0005,
+     "p_pole": 0.0008,
+     "p_podium": 0.0021,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 11.0,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "sergio-perez",
+     "team": "cadillac",
+     "p_win": 0.0004,
+     "p_pole": 0.0009,
+     "p_podium": 0.002,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 12.8,
+     "pts_last5": 0.0
+    },
+    {
+     "id": "valtteri-bottas",
+     "team": "cadillac",
+     "p_win": 0.0004,
+     "p_pole": 0.0007,
+     "p_podium": 0.0021,
+     "circ_starts": 5,
+     "circ_wins": 0,
+     "circ_avg_finish": 12.6,
+     "pts_last5": 0.0
+    }
+   ],
+   "strategy": {
+    "circuit_id": "yas-marina",
+    "editions_recent": [
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "stop_share": {
+     "1": 0.461,
+     "2": 0.513,
+     "3": 0.026
+    },
+    "stop_share_top10": {
+     "1": 0.475,
+     "2": 0.525
+    },
+    "winner_stops": [
+     {
+      "season": 2022,
+      "stops": 1
+     },
+     {
+      "season": 2023,
+      "stops": 2
+     },
+     {
+      "season": 2024,
+      "stops": 1
+     },
+     {
+      "season": 2025,
+      "stops": 1
+     }
+    ],
+    "by_stops": [
+     {
+      "stops": 1,
+      "avg_gain": 0.23,
+      "avg_finish": 9.43,
+      "n": 35.0
+     },
+     {
+      "stops": 2,
+      "avg_gain": 0.69,
+      "avg_finish": 10.26,
+      "n": 39.0
+     }
+    ],
+    "typical_stops": 1,
+    "windows": {
+     "1stop_1": [
+      19,
+      22,
+      26
+     ],
+     "2stop_1": [
+      13,
+      15,
+      16
+     ],
+     "2stop_2": [
+      35,
+      39,
+      41
+     ]
+    },
+    "pit_lane_time": 22.0,
+    "pole_win_rate": 0.917,
+    "front_row_win_rate": 1.0,
+    "winner_avg_grid": 1.08,
+    "deepest_winner": [
+     2,
+     2014
+    ],
+    "mean_abs_change": 2.48,
+    "n_editions_2014": 12,
+    "history": [
+     {
+      "season": 2025,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 82.207,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2024,
+      "pole": "lando-norris",
+      "pole_team": "mclaren",
+      "pole_time": 82.595,
+      "winner": "lando-norris",
+      "winner_team": "mclaren",
+      "winner_grid": 1
+     },
+     {
+      "season": 2023,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 83.445,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2022,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 83.824,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2021,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 82.10900000000001,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2020,
+      "pole": "max-verstappen",
+      "pole_team": "red-bull",
+      "pole_time": 95.24600000000001,
+      "winner": "max-verstappen",
+      "winner_team": "red-bull",
+      "winner_grid": 1
+     },
+     {
+      "season": 2019,
+      "pole": "lewis-hamilton",
+      "pole_team": "mercedes",
+      "pole_time": 94.779,
+      "winner": "lewis-hamilton",
+      "winner_team": "mercedes",
+      "winner_grid": 1
+     },
+     {
+      "season": 2018,
+      "pole": "lewis-hamilton",
+      "pole_team": "mercedes",
+      "pole_time": 94.794,
+      "winner": "lewis-hamilton",
+      "winner_team": "mercedes",
+      "winner_grid": 1
+     }
+    ],
+    "compounds": {
+     "set": null,
+     "prev": "C3 / C4 / C5 (2025)",
+     "note": "Low degradation track; a one-stop is usually fastest."
+    },
+    "recommendation": {
+     "plan": "One-stop",
+     "detail": "Pit around lap 22 (top-10 runners stopped between laps 19 and 26).",
+     "quali": "Track position is everything here: qualifying decides most races, so an undercut is the main way to gain places.",
+     "alt": "Recently, two-stoppers gained more places on average (+0.7 vs +0.2).",
+     "compound_note": "Low degradation track; a one-stop is usually fastest."
+    }
+   }
+  }
+ ],
+ "standings": [
+  {
+   "pos": 1,
+   "driver": "kimi-antonelli",
+   "points": 365.0
+  },
+  {
+   "pos": 2,
+   "driver": "george-russell",
+   "points": 242.0
+  },
+  {
+   "pos": 3,
+   "driver": "lewis-hamilton",
+   "points": 241.0
+  },
+  {
+   "pos": 4,
+   "driver": "max-verstappen",
+   "points": 236.0
+  },
+  {
+   "pos": 5,
+   "driver": "charles-leclerc",
+   "points": 233.0
+  },
+  {
+   "pos": 6,
+   "driver": "lando-norris",
+   "points": 211.0
+  },
+  {
+   "pos": 7,
+   "driver": "oscar-piastri",
+   "points": 144.0
+  },
+  {
+   "pos": 8,
+   "driver": "isack-hadjar",
+   "points": 105.0
+  },
+  {
+   "pos": 9,
+   "driver": "liam-lawson",
+   "points": 77.0
+  },
+  {
+   "pos": 10,
+   "driver": "pierre-gasly",
+   "points": 42.0
+  },
+  {
+   "pos": 11,
+   "driver": "arvid-lindblad",
+   "points": 38.0
+  },
+  {
+   "pos": 12,
+   "driver": "franco-colapinto",
+   "points": 27.0
+  },
+  {
+   "pos": 13,
+   "driver": "oliver-bearman",
+   "points": 23.0
+  },
+  {
+   "pos": 14,
+   "driver": "nico-hulkenberg",
+   "points": 13.0
+  },
+  {
+   "pos": 15,
+   "driver": "gabriel-bortoleto",
+   "points": 10.0
+  },
+  {
+   "pos": 16,
+   "driver": "esteban-ocon",
+   "points": 7.0
+  },
+  {
+   "pos": 17,
+   "driver": "fernando-alonso",
+   "points": 7.0
+  },
+  {
+   "pos": 18,
+   "driver": "carlos-sainz-jr",
+   "points": 7.0
+  },
+  {
+   "pos": 19,
+   "driver": "alexander-albon",
+   "points": 5.0
+  },
+  {
+   "pos": 20,
+   "driver": "yuki-tsunoda",
+   "points": 1.0
+  },
+  {
+   "pos": 21,
+   "driver": "lance-stroll",
+   "points": 0.0
+  },
+  {
+   "pos": 22,
+   "driver": "valtteri-bottas",
+   "points": 0.0
+  },
+  {
+   "pos": 23,
+   "driver": "sergio-perez",
+   "points": 0.0
+  }
+ ],
+ "constructor_standings": [
+  {
+   "pos": 1,
+   "team": "mercedes",
+   "points": 607.0
+  },
+  {
+   "pos": 2,
+   "team": "ferrari",
+   "points": 474.0
+  },
+  {
+   "pos": 3,
+   "team": "red-bull",
+   "points": 355.0
+  },
+  {
+   "pos": 4,
+   "team": "mclaren",
+   "points": 355.0
+  },
+  {
+   "pos": 5,
+   "team": "racing-bulls",
+   "points": 102.0
+  },
+  {
+   "pos": 6,
+   "team": "alpine",
+   "points": 69.0
+  },
+  {
+   "pos": 7,
+   "team": "haas",
+   "points": 30.0
+  },
+  {
+   "pos": 8,
+   "team": "audi",
+   "points": 23.0
+  },
+  {
+   "pos": 9,
+   "team": "williams",
+   "points": 12.0
+  },
+  {
+   "pos": 10,
+   "team": "aston-martin",
+   "points": 7.0
+  },
+  {
+   "pos": 11,
+   "team": "cadillac",
+   "points": 0.0
+  }
+ ],
+ "title": {
+  "leader": "kimi-antonelli",
+  "leader_pts": 365.0,
+  "second": "george-russell",
+  "second_pts": 242.0,
+  "gap": 123.0,
+  "races_left": 5,
+  "max_points_left": 125,
+  "alive": [
+   "kimi-antonelli",
+   "george-russell",
+   "lewis-hamilton"
+  ],
+  "clinch_scenarios": [
+   {
+    "rival": "george-russell",
+    "gap": 123.0,
+    "worst_finish_if_rival_wins": 9
+   },
+   {
+    "rival": "lewis-hamilton",
+    "gap": 124.0,
+    "worst_finish_if_rival_wins": 10
+   }
+  ]
+ },
+ "season_poles": [
+  {
+   "round": 1,
+   "gp": "australia",
+   "circuit": "melbourne",
+   "date": "2026-03-08",
+   "pole": "george-russell",
+   "pole_team": "mercedes",
+   "winner": "george-russell",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 2,
+   "gp": "china",
+   "circuit": "shanghai",
+   "date": "2026-03-15",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 3,
+   "gp": "japan",
+   "circuit": "suzuka",
+   "date": "2026-03-29",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 4,
+   "gp": "miami",
+   "circuit": "miami",
+   "date": "2026-05-03",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 5,
+   "gp": "canada",
+   "circuit": "montreal",
+   "date": "2026-05-24",
+   "pole": "george-russell",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 2
+  },
+  {
+   "round": 6,
+   "gp": "monaco",
+   "circuit": "monaco",
+   "date": "2026-06-07",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 7,
+   "gp": "barcelona-catalunya",
+   "circuit": "catalunya",
+   "date": "2026-06-14",
+   "pole": "george-russell",
+   "pole_team": "mercedes",
+   "winner": "lewis-hamilton",
+   "winner_team": "ferrari",
+   "winner_grid": 2
+  },
+  {
+   "round": 8,
+   "gp": "austria",
+   "circuit": "spielberg",
+   "date": "2026-06-28",
+   "pole": "george-russell",
+   "pole_team": "mercedes",
+   "winner": "george-russell",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 9,
+   "gp": "great-britain",
+   "circuit": "silverstone",
+   "date": "2026-07-05",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "charles-leclerc",
+   "winner_team": "ferrari",
+   "winner_grid": 2
+  },
+  {
+   "round": 10,
+   "gp": "belgium",
+   "circuit": "spa-francorchamps",
+   "date": "2026-07-19",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 11,
+   "gp": "hungary",
+   "circuit": "hungaroring",
+   "date": "2026-07-26",
+   "pole": "lando-norris",
+   "pole_team": "mclaren",
+   "winner": "lando-norris",
+   "winner_team": "mclaren",
+   "winner_grid": 1
+  },
+  {
+   "round": 12,
+   "gp": "netherlands",
+   "circuit": "zandvoort",
+   "date": "2026-08-23",
+   "pole": "lando-norris",
+   "pole_team": "mclaren",
+   "winner": "lando-norris",
+   "winner_team": "mclaren",
+   "winner_grid": 1
+  },
+  {
+   "round": 13,
+   "gp": "italy",
+   "circuit": "monza",
+   "date": "2026-09-06",
+   "pole": "pierre-gasly",
+   "pole_team": "alpine",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 19
+  },
+  {
+   "round": 14,
+   "gp": "spain",
+   "circuit": "madring",
+   "date": "2026-09-13",
+   "pole": "lando-norris",
+   "pole_team": "mclaren",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 2
+  },
+  {
+   "round": 15,
+   "gp": "azerbaijan",
+   "circuit": "baku",
+   "date": "2026-09-26",
+   "pole": "george-russell",
+   "pole_team": "mercedes",
+   "winner": "george-russell",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  },
+  {
+   "round": 16,
+   "gp": "bahrain",
+   "circuit": "sepang",
+   "date": "2026-10-04",
+   "pole": "max-verstappen",
+   "pole_team": "red-bull",
+   "winner": "max-verstappen",
+   "winner_team": "red-bull",
+   "winner_grid": 1
+  },
+  {
+   "round": 17,
+   "gp": "singapore",
+   "circuit": "marina-bay",
+   "date": "2026-10-11",
+   "pole": "max-verstappen",
+   "pole_team": "red-bull",
+   "winner": "max-verstappen",
+   "winner_team": "red-bull",
+   "winner_grid": 1
+  },
+  {
+   "round": 18,
+   "gp": "united-states",
+   "circuit": "austin",
+   "date": "2026-10-25",
+   "pole": "kimi-antonelli",
+   "pole_team": "mercedes",
+   "winner": "kimi-antonelli",
+   "winner_team": "mercedes",
+   "winner_grid": 1
+  }
+ ],
+ "form": {
+  "alexander-albon": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 12,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": "DNS",
+     "grid": null,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 20,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 10,
+     "grid": 15,
+     "q": 15,
+     "pts": 1.0
+    },
+    {
+     "round": 5,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 8,
+     "grid": 11,
+     "q": 11,
+     "pts": 4.0
+    },
+    {
+     "round": 7,
+     "pos": "NC",
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 17,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": "DNF",
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 15,
+     "grid": 15,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 17,
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 17,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 17,
+     "grid": 20,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 15,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": "DNF",
+     "grid": 12,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 18,
+     "grid": 16,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 17,
+     "grid": 17,
+     "q": 20,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 6,
+   "team": "williams"
+  },
+  "arvid-lindblad": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 8,
+     "grid": 9,
+     "q": 9,
+     "pts": 4.0
+    },
+    {
+     "round": 2,
+     "pos": 12,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 14,
+     "grid": 10,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 14,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": "DNS",
+     "grid": 9,
+     "q": 9,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 6,
+     "grid": 15,
+     "q": 15,
+     "pts": 8.0
+    },
+    {
+     "round": 7,
+     "pos": 9,
+     "grid": 11,
+     "q": 11,
+     "pts": 2.0
+    },
+    {
+     "round": 8,
+     "pos": 10,
+     "grid": 10,
+     "q": 10,
+     "pts": 1.0
+    },
+    {
+     "round": 9,
+     "pos": 7,
+     "grid": 9,
+     "q": 9,
+     "pts": 6.0
+    },
+    {
+     "round": 10,
+     "pos": 9,
+     "grid": 7,
+     "q": 8,
+     "pts": 2.0
+    },
+    {
+     "round": 11,
+     "pos": 10,
+     "grid": 9,
+     "q": 9,
+     "pts": 1.0
+    },
+    {
+     "round": 12,
+     "pos": 12,
+     "grid": 10,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 8,
+     "grid": 9,
+     "q": 10,
+     "pts": 4.0
+    },
+    {
+     "round": 14,
+     "pos": 9,
+     "grid": 10,
+     "q": 10,
+     "pts": 2.0
+    },
+    {
+     "round": 15,
+     "pos": 7,
+     "grid": 15,
+     "q": 15,
+     "pts": 6.0
+    },
+    {
+     "round": 16,
+     "pos": 10,
+     "grid": 22,
+     "q": 16,
+     "pts": 1.0
+    },
+    {
+     "round": 17,
+     "pos": 15,
+     "grid": 9,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 12,
+     "grid": 14,
+     "q": 9,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 1,
+   "team": "racing-bulls"
+  },
+  "carlos-sainz-jr": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 15,
+     "grid": 21,
+     "q": null,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 9,
+     "grid": 17,
+     "q": 17,
+     "pts": 2.0
+    },
+    {
+     "round": 3,
+     "pos": 15,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 9,
+     "grid": 13,
+     "q": 13,
+     "pts": 2.0
+    },
+    {
+     "round": 5,
+     "pos": 9,
+     "grid": 15,
+     "q": 15,
+     "pts": 2.0
+    },
+    {
+     "round": 6,
+     "pos": 16,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 12,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": "DNF",
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 17,
+     "grid": 14,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 16,
+     "grid": 19,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 18,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 16,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 13,
+     "grid": 13,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 10,
+     "grid": 14,
+     "q": 9,
+     "pts": 1.0
+    },
+    {
+     "round": 16,
+     "pos": 17,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 14,
+     "grid": 13,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 18,
+     "grid": 16,
+     "q": 19,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 2,
+   "team": "williams"
+  },
+  "charles-leclerc": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 3,
+     "grid": 4,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 2,
+     "pos": 4,
+     "grid": 4,
+     "q": 4,
+     "pts": 12.0
+    },
+    {
+     "round": 3,
+     "pos": 3,
+     "grid": 4,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 4,
+     "pos": 8,
+     "grid": 3,
+     "q": 3,
+     "pts": 4.0
+    },
+    {
+     "round": 5,
+     "pos": 4,
+     "grid": 8,
+     "q": 8,
+     "pts": 12.0
+    },
+    {
+     "round": 6,
+     "pos": "DNF",
+     "grid": 4,
+     "q": 4,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 15,
+     "grid": 10,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 8,
+     "grid": 2,
+     "q": 2,
+     "pts": 4.0
+    },
+    {
+     "round": 9,
+     "pos": 1,
+     "grid": 2,
+     "q": 2,
+     "pts": 25.0
+    },
+    {
+     "round": 10,
+     "pos": 2,
+     "grid": 4,
+     "q": 5,
+     "pts": 18.0
+    },
+    {
+     "round": 11,
+     "pos": 4,
+     "grid": 2,
+     "q": 3,
+     "pts": 12.0
+    },
+    {
+     "round": 12,
+     "pos": 5,
+     "grid": 6,
+     "q": 6,
+     "pts": 10.0
+    },
+    {
+     "round": 13,
+     "pos": "DNF",
+     "grid": 3,
+     "q": 4,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 4,
+     "grid": 5,
+     "q": 5,
+     "pts": 12.0
+    },
+    {
+     "round": 15,
+     "pos": 4,
+     "grid": 2,
+     "q": 2,
+     "pts": 12.0
+    },
+    {
+     "round": 16,
+     "pos": 4,
+     "grid": 4,
+     "q": 5,
+     "pts": 12.0
+    },
+    {
+     "round": 17,
+     "pos": 2,
+     "grid": 2,
+     "q": 2,
+     "pts": 18.0
+    },
+    {
+     "round": 18,
+     "pos": 2,
+     "grid": 4,
+     "q": 4,
+     "pts": 18.0
+    }
+   ],
+   "wins": 1,
+   "podiums": 6,
+   "poles": 0,
+   "dnfs": 2,
+   "team": "ferrari"
+  },
+  "esteban-ocon": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 11,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 14,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 10,
+     "grid": 12,
+     "q": 12,
+     "pts": 1.0
+    },
+    {
+     "round": 4,
+     "pos": 13,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 14,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 9,
+     "grid": 17,
+     "q": 17,
+     "pts": 2.0
+    },
+    {
+     "round": 7,
+     "pos": 13,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 16,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 13,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 17,
+     "grid": 16,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 16,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": "DNF",
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 16,
+     "grid": 14,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 11,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 8,
+     "grid": 13,
+     "q": 14,
+     "pts": 4.0
+    },
+    {
+     "round": 16,
+     "pos": 15,
+     "grid": 17,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 13,
+     "grid": 12,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 14,
+     "grid": 15,
+     "q": 17,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 1,
+   "team": "haas"
+  },
+  "fernando-alonso": {
+   "results": [
+    {
+     "round": 1,
+     "pos": "DNF",
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 18,
+     "grid": 21,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 15,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 10,
+     "grid": 21,
+     "q": 21,
+     "pts": 1.0
+    },
+    {
+     "round": 7,
+     "pos": "DNF",
+     "grid": null,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 18,
+     "grid": 21,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 18,
+     "grid": null,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 19,
+     "grid": 22,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 14,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 9,
+     "grid": 18,
+     "q": 18,
+     "pts": 2.0
+    },
+    {
+     "round": 13,
+     "pos": "DNF",
+     "grid": null,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 17,
+     "grid": 17,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": "DNF",
+     "grid": 21,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 8,
+     "grid": 12,
+     "q": 12,
+     "pts": 4.0
+    },
+    {
+     "round": 17,
+     "pos": 16,
+     "grid": null,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 16,
+     "grid": 12,
+     "q": 15,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 6,
+   "team": "aston-martin"
+  },
+  "franco-colapinto": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 14,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 10,
+     "grid": 12,
+     "q": 12,
+     "pts": 1.0
+    },
+    {
+     "round": 3,
+     "pos": 16,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 7,
+     "grid": 8,
+     "q": 8,
+     "pts": 6.0
+    },
+    {
+     "round": 5,
+     "pos": 6,
+     "grid": 10,
+     "q": 10,
+     "pts": 8.0
+    },
+    {
+     "round": 6,
+     "pos": 14,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 10,
+     "grid": 13,
+     "q": 13,
+     "pts": 1.0
+    },
+    {
+     "round": 8,
+     "pos": 15,
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 9,
+     "grid": 19,
+     "q": 19,
+     "pts": 2.0
+    },
+    {
+     "round": 10,
+     "pos": 10,
+     "grid": 11,
+     "q": 13,
+     "pts": 1.0
+    },
+    {
+     "round": 11,
+     "pos": 15,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 14,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 9,
+     "grid": 7,
+     "q": 8,
+     "pts": 2.0
+    },
+    {
+     "round": 14,
+     "pos": 7,
+     "grid": 9,
+     "q": 9,
+     "pts": 6.0
+    },
+    {
+     "round": 15,
+     "pos": "DNF",
+     "grid": 9,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 13,
+     "grid": 21,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": "DNF",
+     "grid": 15,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 14,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 3,
+   "team": "alpine"
+  },
+  "gabriel-bortoleto": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 9,
+     "grid": 10,
+     "q": 10,
+     "pts": 2.0
+    },
+    {
+     "round": 2,
+     "pos": "DNS",
+     "grid": 16,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 13,
+     "grid": 9,
+     "q": 9,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 12,
+     "grid": 21,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 13,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 11,
+     "grid": null,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 11,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 11,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 8,
+     "grid": 11,
+     "q": 11,
+     "pts": 4.0
+    },
+    {
+     "round": 10,
+     "pos": 8,
+     "grid": 8,
+     "q": 9,
+     "pts": 4.0
+    },
+    {
+     "round": 11,
+     "pos": 11,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 13,
+     "grid": 9,
+     "q": 9,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 11,
+     "grid": 10,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 13,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 15,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 18,
+     "grid": 10,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": "DNF",
+     "grid": 14,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 13,
+     "grid": 21,
+     "q": 13,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 2,
+   "team": "audi"
+  },
+  "george-russell": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 2,
+     "pos": 2,
+     "grid": 2,
+     "q": 2,
+     "pts": 18.0
+    },
+    {
+     "round": 3,
+     "pos": 4,
+     "grid": 2,
+     "q": 2,
+     "pts": 12.0
+    },
+    {
+     "round": 4,
+     "pos": 4,
+     "grid": 5,
+     "q": 5,
+     "pts": 12.0
+    },
+    {
+     "round": 5,
+     "pos": "DNF",
+     "grid": 1,
+     "q": 1,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 12,
+     "grid": 6,
+     "q": 6,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 2,
+     "grid": 1,
+     "q": 1,
+     "pts": 18.0
+    },
+    {
+     "round": 8,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 9,
+     "pos": 2,
+     "grid": 4,
+     "q": 4,
+     "pts": 18.0
+    },
+    {
+     "round": 10,
+     "pos": "DNF",
+     "grid": 3,
+     "q": 4,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 7,
+     "grid": 6,
+     "q": 7,
+     "pts": 6.0
+    },
+    {
+     "round": 12,
+     "pos": 3,
+     "grid": 2,
+     "q": 2,
+     "pts": 15.0
+    },
+    {
+     "round": 13,
+     "pos": 2,
+     "grid": 2,
+     "q": 2,
+     "pts": 18.0
+    },
+    {
+     "round": 14,
+     "pos": 5,
+     "grid": 6,
+     "q": 6,
+     "pts": 10.0
+    },
+    {
+     "round": 15,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 16,
+     "pos": 20,
+     "grid": 7,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 9,
+     "grid": 19,
+     "q": 6,
+     "pts": 2.0
+    },
+    {
+     "round": 18,
+     "pos": 8,
+     "grid": 6,
+     "q": 6,
+     "pts": 4.0
+    }
+   ],
+   "wins": 3,
+   "podiums": 8,
+   "poles": 5,
+   "dnfs": 2,
+   "team": "mercedes"
+  },
+  "isack-hadjar": {
+   "results": [
+    {
+     "round": 1,
+     "pos": "DNF",
+     "grid": 3,
+     "q": 3,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 8,
+     "grid": 9,
+     "q": 9,
+     "pts": 4.0
+    },
+    {
+     "round": 3,
+     "pos": 12,
+     "grid": 8,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": "DNF",
+     "grid": null,
+     "q": null,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 5,
+     "grid": 7,
+     "q": 7,
+     "pts": 10.0
+    },
+    {
+     "round": 6,
+     "pos": 3,
+     "grid": 5,
+     "q": 5,
+     "pts": 15.0
+    },
+    {
+     "round": 7,
+     "pos": 6,
+     "grid": 6,
+     "q": 6,
+     "pts": 8.0
+    },
+    {
+     "round": 8,
+     "pos": 6,
+     "grid": 8,
+     "q": 8,
+     "pts": 8.0
+    },
+    {
+     "round": 9,
+     "pos": 5,
+     "grid": 5,
+     "q": 5,
+     "pts": 10.0
+    },
+    {
+     "round": 10,
+     "pos": 6,
+     "grid": 21,
+     "q": 10,
+     "pts": 8.0
+    },
+    {
+     "round": 11,
+     "pos": 6,
+     "grid": 8,
+     "q": 8,
+     "pts": 8.0
+    },
+    {
+     "round": 15,
+     "pos": 3,
+     "grid": 4,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 16,
+     "pos": 5,
+     "grid": 8,
+     "q": 3,
+     "pts": 10.0
+    },
+    {
+     "round": 17,
+     "pos": 10,
+     "grid": null,
+     "q": null,
+     "pts": 1.0
+    },
+    {
+     "round": 18,
+     "pos": 6,
+     "grid": 3,
+     "q": 3,
+     "pts": 8.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 2,
+   "poles": 0,
+   "dnfs": 2,
+   "team": "red-bull"
+  },
+  "kimi-antonelli": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 2,
+     "grid": 2,
+     "q": 2,
+     "pts": 18.0
+    },
+    {
+     "round": 2,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 3,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 4,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 5,
+     "pos": 1,
+     "grid": 2,
+     "q": 2,
+     "pts": 25.0
+    },
+    {
+     "round": 6,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 7,
+     "pos": 16,
+     "grid": 3,
+     "q": 3,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 3,
+     "grid": 4,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 9,
+     "pos": 15,
+     "grid": 1,
+     "q": 1,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 11,
+     "pos": 3,
+     "grid": 7,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 12,
+     "pos": 2,
+     "grid": 3,
+     "q": 3,
+     "pts": 18.0
+    },
+    {
+     "round": 13,
+     "pos": 1,
+     "grid": 19,
+     "q": 7,
+     "pts": 25.0
+    },
+    {
+     "round": 14,
+     "pos": 1,
+     "grid": 2,
+     "q": 2,
+     "pts": 25.0
+    },
+    {
+     "round": 15,
+     "pos": 5,
+     "grid": 16,
+     "q": 16,
+     "pts": 10.0
+    },
+    {
+     "round": 16,
+     "pos": 2,
+     "grid": 3,
+     "q": 4,
+     "pts": 18.0
+    },
+    {
+     "round": 17,
+     "pos": 3,
+     "grid": 4,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 18,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    }
+   ],
+   "wins": 9,
+   "podiums": 15,
+   "poles": 7,
+   "dnfs": 0,
+   "team": "mercedes"
+  },
+  "lance-stroll": {
+   "results": [
+    {
+     "round": 1,
+     "pos": "NC",
+     "grid": 22,
+     "q": null,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": "DNF",
+     "grid": 22,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 17,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 15,
+     "grid": null,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": "DNF",
+     "grid": 22,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": "DNF",
+     "grid": 21,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": "DNF",
+     "grid": 22,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 19,
+     "grid": 22,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 13,
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": "DNF",
+     "grid": 21,
+     "q": null,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": "DNF",
+     "grid": 22,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 12,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": "DNF",
+     "grid": null,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 15,
+     "grid": null,
+     "q": 18,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 12,
+   "team": "aston-martin"
+  },
+  "lando-norris": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 5,
+     "grid": 6,
+     "q": 6,
+     "pts": 10.0
+    },
+    {
+     "round": 2,
+     "pos": "DNS",
+     "grid": 6,
+     "q": 6,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 5,
+     "grid": 5,
+     "q": 5,
+     "pts": 10.0
+    },
+    {
+     "round": 4,
+     "pos": 2,
+     "grid": 4,
+     "q": 4,
+     "pts": 18.0
+    },
+    {
+     "round": 5,
+     "pos": "DNF",
+     "grid": 3,
+     "q": 3,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": "DNF",
+     "grid": 8,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 3,
+     "grid": 4,
+     "q": 4,
+     "pts": 15.0
+    },
+    {
+     "round": 8,
+     "pos": 7,
+     "grid": 6,
+     "q": 6,
+     "pts": 6.0
+    },
+    {
+     "round": 9,
+     "pos": 4,
+     "grid": 6,
+     "q": 6,
+     "pts": 12.0
+    },
+    {
+     "round": 10,
+     "pos": 7,
+     "grid": 13,
+     "q": 3,
+     "pts": 6.0
+    },
+    {
+     "round": 11,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 12,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 13,
+     "pos": 4,
+     "grid": 8,
+     "q": 9,
+     "pts": 12.0
+    },
+    {
+     "round": 14,
+     "pos": 3,
+     "grid": 1,
+     "q": 1,
+     "pts": 15.0
+    },
+    {
+     "round": 15,
+     "pos": "DNF",
+     "grid": 5,
+     "q": 5,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 9,
+     "grid": 5,
+     "q": 6,
+     "pts": 2.0
+    },
+    {
+     "round": 17,
+     "pos": 4,
+     "grid": 5,
+     "q": 5,
+     "pts": 12.0
+    },
+    {
+     "round": 18,
+     "pos": 5,
+     "grid": 8,
+     "q": 8,
+     "pts": 10.0
+    }
+   ],
+   "wins": 2,
+   "podiums": 5,
+   "poles": 3,
+   "dnfs": 4,
+   "team": "mclaren"
+  },
+  "lewis-hamilton": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 4,
+     "grid": 7,
+     "q": 7,
+     "pts": 12.0
+    },
+    {
+     "round": 2,
+     "pos": 3,
+     "grid": 3,
+     "q": 3,
+     "pts": 15.0
+    },
+    {
+     "round": 3,
+     "pos": 6,
+     "grid": 6,
+     "q": 6,
+     "pts": 8.0
+    },
+    {
+     "round": 4,
+     "pos": 6,
+     "grid": 6,
+     "q": 6,
+     "pts": 8.0
+    },
+    {
+     "round": 5,
+     "pos": 2,
+     "grid": 5,
+     "q": 5,
+     "pts": 18.0
+    },
+    {
+     "round": 6,
+     "pos": 2,
+     "grid": 3,
+     "q": 3,
+     "pts": 18.0
+    },
+    {
+     "round": 7,
+     "pos": 1,
+     "grid": 2,
+     "q": 2,
+     "pts": 25.0
+    },
+    {
+     "round": 8,
+     "pos": 5,
+     "grid": 3,
+     "q": 3,
+     "pts": 10.0
+    },
+    {
+     "round": 9,
+     "pos": 3,
+     "grid": 3,
+     "q": 3,
+     "pts": 15.0
+    },
+    {
+     "round": 10,
+     "pos": 4,
+     "grid": 5,
+     "q": 6,
+     "pts": 12.0
+    },
+    {
+     "round": 11,
+     "pos": 5,
+     "grid": 5,
+     "q": 2,
+     "pts": 10.0
+    },
+    {
+     "round": 12,
+     "pos": 4,
+     "grid": 5,
+     "q": 5,
+     "pts": 12.0
+    },
+    {
+     "round": 13,
+     "pos": 6,
+     "grid": 4,
+     "q": 5,
+     "pts": 8.0
+    },
+    {
+     "round": 14,
+     "pos": "DNF",
+     "grid": 4,
+     "q": 4,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 6,
+     "grid": 6,
+     "q": 6,
+     "pts": 8.0
+    },
+    {
+     "round": 16,
+     "pos": 3,
+     "grid": 2,
+     "q": 2,
+     "pts": 15.0
+    },
+    {
+     "round": 17,
+     "pos": 6,
+     "grid": 3,
+     "q": 3,
+     "pts": 8.0
+    },
+    {
+     "round": 18,
+     "pos": 4,
+     "grid": 5,
+     "q": 5,
+     "pts": 12.0
+    }
+   ],
+   "wins": 1,
+   "podiums": 6,
+   "poles": 0,
+   "dnfs": 1,
+   "team": "ferrari"
+  },
+  "liam-lawson": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 13,
+     "grid": 8,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 7,
+     "grid": 14,
+     "q": 14,
+     "pts": 6.0
+    },
+    {
+     "round": 3,
+     "pos": 9,
+     "grid": 14,
+     "q": 14,
+     "pts": 2.0
+    },
+    {
+     "round": 4,
+     "pos": "DNF",
+     "grid": 11,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 7,
+     "grid": 12,
+     "q": 12,
+     "pts": 6.0
+    },
+    {
+     "round": 6,
+     "pos": 5,
+     "grid": 10,
+     "q": 10,
+     "pts": 10.0
+    },
+    {
+     "round": 7,
+     "pos": 8,
+     "grid": 8,
+     "q": 8,
+     "pts": 4.0
+    },
+    {
+     "round": 8,
+     "pos": 9,
+     "grid": 9,
+     "q": 9,
+     "pts": 2.0
+    },
+    {
+     "round": 9,
+     "pos": 6,
+     "grid": 10,
+     "q": 10,
+     "pts": 8.0
+    },
+    {
+     "round": 10,
+     "pos": 12,
+     "grid": 9,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 8,
+     "grid": 11,
+     "q": 11,
+     "pts": 4.0
+    },
+    {
+     "round": 12,
+     "pos": 7,
+     "grid": 8,
+     "q": 8,
+     "pts": 6.0
+    },
+    {
+     "round": 13,
+     "pos": 14,
+     "grid": null,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 6,
+     "grid": 8,
+     "q": 8,
+     "pts": 8.0
+    },
+    {
+     "round": 15,
+     "pos": 12,
+     "grid": 11,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 7,
+     "grid": 11,
+     "q": 11,
+     "pts": 6.0
+    },
+    {
+     "round": 17,
+     "pos": 7,
+     "grid": 8,
+     "q": 9,
+     "pts": 6.0
+    },
+    {
+     "round": 18,
+     "pos": 9,
+     "grid": 9,
+     "q": 10,
+     "pts": 2.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 1,
+   "team": "racing-bulls"
+  },
+  "max-verstappen": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 6,
+     "grid": 20,
+     "q": null,
+     "pts": 8.0
+    },
+    {
+     "round": 2,
+     "pos": "DNF",
+     "grid": 8,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 8,
+     "grid": 11,
+     "q": 11,
+     "pts": 4.0
+    },
+    {
+     "round": 4,
+     "pos": 5,
+     "grid": 2,
+     "q": 2,
+     "pts": 10.0
+    },
+    {
+     "round": 5,
+     "pos": 3,
+     "grid": 6,
+     "q": 6,
+     "pts": 15.0
+    },
+    {
+     "round": 6,
+     "pos": "DNF",
+     "grid": 2,
+     "q": 2,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 4,
+     "grid": 5,
+     "q": 5,
+     "pts": 12.0
+    },
+    {
+     "round": 8,
+     "pos": 2,
+     "grid": 5,
+     "q": 5,
+     "pts": 18.0
+    },
+    {
+     "round": 9,
+     "pos": 20,
+     "grid": 7,
+     "q": 7,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 3,
+     "grid": 2,
+     "q": 2,
+     "pts": 15.0
+    },
+    {
+     "round": 11,
+     "pos": 2,
+     "grid": 4,
+     "q": 6,
+     "pts": 18.0
+    },
+    {
+     "round": 12,
+     "pos": "DNF",
+     "grid": 7,
+     "q": 7,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 3,
+     "grid": 5,
+     "q": 6,
+     "pts": 15.0
+    },
+    {
+     "round": 14,
+     "pos": 2,
+     "grid": 3,
+     "q": 3,
+     "pts": 18.0
+    },
+    {
+     "round": 15,
+     "pos": 2,
+     "grid": 8,
+     "q": 8,
+     "pts": 18.0
+    },
+    {
+     "round": 16,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 17,
+     "pos": 1,
+     "grid": 1,
+     "q": 1,
+     "pts": 25.0
+    },
+    {
+     "round": 18,
+     "pos": 3,
+     "grid": 2,
+     "q": 2,
+     "pts": 15.0
+    }
+   ],
+   "wins": 2,
+   "podiums": 10,
+   "poles": 2,
+   "dnfs": 3,
+   "team": "red-bull"
+  },
+  "nico-hulkenberg": {
+   "results": [
+    {
+     "round": 1,
+     "pos": "DNS",
+     "grid": 11,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 11,
+     "grid": 11,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 11,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": "DNF",
+     "grid": 10,
+     "q": 10,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 12,
+     "grid": 11,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 13,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": "DNF",
+     "grid": 9,
+     "q": 9,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 12,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": "DNF",
+     "grid": 12,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 13,
+     "grid": 12,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 9,
+     "grid": 10,
+     "q": 10,
+     "pts": 2.0
+    },
+    {
+     "round": 12,
+     "pos": 8,
+     "grid": 13,
+     "q": 13,
+     "pts": 4.0
+    },
+    {
+     "round": 13,
+     "pos": 12,
+     "grid": 12,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 10,
+     "grid": 11,
+     "q": 11,
+     "pts": 1.0
+    },
+    {
+     "round": 15,
+     "pos": 11,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 11,
+     "grid": 15,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 8,
+     "grid": 10,
+     "q": 11,
+     "pts": 4.0
+    },
+    {
+     "round": 18,
+     "pos": 11,
+     "grid": 11,
+     "q": 12,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 4,
+   "team": "audi"
+  },
+  "oliver-bearman": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 7,
+     "grid": 12,
+     "q": 12,
+     "pts": 6.0
+    },
+    {
+     "round": 2,
+     "pos": 5,
+     "grid": 10,
+     "q": 10,
+     "pts": 10.0
+    },
+    {
+     "round": 3,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 11,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 10,
+     "grid": 16,
+     "q": 16,
+     "pts": 1.0
+    },
+    {
+     "round": 6,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 17,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": 14,
+     "grid": 13,
+     "q": 13,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 12,
+     "grid": 13,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 14,
+     "grid": 14,
+     "q": 16,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 19,
+     "grid": 17,
+     "q": 17,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 15,
+     "grid": 11,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 16,
+     "grid": null,
+     "q": null,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 9,
+     "grid": 10,
+     "q": 11,
+     "pts": 2.0
+    },
+    {
+     "round": 16,
+     "pos": 14,
+     "grid": 16,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 12,
+     "grid": 11,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": "DNF",
+     "grid": 13,
+     "q": 16,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 4,
+   "team": "haas"
+  },
+  "oscar-piastri": {
+   "results": [
+    {
+     "round": 1,
+     "pos": "DNS",
+     "grid": 5,
+     "q": 5,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": "DNS",
+     "grid": 5,
+     "q": 5,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 2,
+     "grid": 3,
+     "q": 3,
+     "pts": 18.0
+    },
+    {
+     "round": 4,
+     "pos": 3,
+     "grid": 7,
+     "q": 7,
+     "pts": 15.0
+    },
+    {
+     "round": 5,
+     "pos": 11,
+     "grid": 4,
+     "q": 4,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 4,
+     "grid": 7,
+     "q": 7,
+     "pts": 12.0
+    },
+    {
+     "round": 7,
+     "pos": 5,
+     "grid": 7,
+     "q": 7,
+     "pts": 10.0
+    },
+    {
+     "round": 8,
+     "pos": 4,
+     "grid": 7,
+     "q": 7,
+     "pts": 12.0
+    },
+    {
+     "round": 9,
+     "pos": 11,
+     "grid": 8,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 5,
+     "grid": 6,
+     "q": 7,
+     "pts": 10.0
+    },
+    {
+     "round": 11,
+     "pos": "DNF",
+     "grid": 3,
+     "q": 5,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 6,
+     "grid": 4,
+     "q": 4,
+     "pts": 8.0
+    },
+    {
+     "round": 13,
+     "pos": 5,
+     "grid": 6,
+     "q": 3,
+     "pts": 10.0
+    },
+    {
+     "round": 14,
+     "pos": 8,
+     "grid": 7,
+     "q": 7,
+     "pts": 4.0
+    },
+    {
+     "round": 15,
+     "pos": 13,
+     "grid": 3,
+     "q": 3,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 6,
+     "grid": 6,
+     "q": 7,
+     "pts": 8.0
+    },
+    {
+     "round": 17,
+     "pos": 5,
+     "grid": 6,
+     "q": 7,
+     "pts": 10.0
+    },
+    {
+     "round": 18,
+     "pos": 7,
+     "grid": 7,
+     "q": 7,
+     "pts": 6.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 2,
+   "poles": 0,
+   "dnfs": 3,
+   "team": "mclaren"
+  },
+  "pierre-gasly": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 10,
+     "grid": 14,
+     "q": 14,
+     "pts": 1.0
+    },
+    {
+     "round": 2,
+     "pos": 6,
+     "grid": 7,
+     "q": 7,
+     "pts": 8.0
+    },
+    {
+     "round": 3,
+     "pos": 7,
+     "grid": 7,
+     "q": 7,
+     "pts": 6.0
+    },
+    {
+     "round": 4,
+     "pos": "DNF",
+     "grid": 9,
+     "q": 9,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 8,
+     "grid": 14,
+     "q": 14,
+     "pts": 4.0
+    },
+    {
+     "round": 6,
+     "pos": 7,
+     "grid": 9,
+     "q": 9,
+     "pts": 6.0
+    },
+    {
+     "round": 7,
+     "pos": 7,
+     "grid": 14,
+     "q": 14,
+     "pts": 6.0
+    },
+    {
+     "round": 8,
+     "pos": 13,
+     "grid": 11,
+     "q": 11,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 10,
+     "grid": 15,
+     "q": 12,
+     "pts": 1.0
+    },
+    {
+     "round": 10,
+     "pos": 11,
+     "grid": 10,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": 12,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 10,
+     "grid": 11,
+     "q": 11,
+     "pts": 1.0
+    },
+    {
+     "round": 13,
+     "pos": 7,
+     "grid": 1,
+     "q": 1,
+     "pts": 6.0
+    },
+    {
+     "round": 14,
+     "pos": 12,
+     "grid": 14,
+     "q": 14,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": "DNF",
+     "grid": 7,
+     "q": 7,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 16,
+     "grid": 9,
+     "q": 9,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 11,
+     "grid": 7,
+     "q": 8,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 10,
+     "grid": 10,
+     "q": 11,
+     "pts": 1.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 1,
+   "dnfs": 2,
+   "team": "alpine"
+  },
+  "sergio-perez": {
+   "results": [
+    {
+     "round": 1,
+     "pos": 16,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 15,
+     "grid": 21,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 17,
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 16,
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": 15,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": 14,
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 14,
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": "DNF",
+     "grid": null,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": 15,
+     "grid": null,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 18,
+     "grid": 17,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": "DNF",
+     "grid": 18,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 14,
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": 19,
+     "grid": 20,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 17,
+     "grid": 17,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": 19,
+     "grid": 18,
+     "q": 21,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 5,
+   "team": "cadillac"
+  },
+  "valtteri-bottas": {
+   "results": [
+    {
+     "round": 1,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 2,
+     "pos": 13,
+     "grid": 19,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 3,
+     "pos": 19,
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 4,
+     "pos": 18,
+     "grid": 19,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 5,
+     "pos": 16,
+     "grid": 21,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 6,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 7,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 8,
+     "pos": "DNF",
+     "grid": 20,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 9,
+     "pos": 16,
+     "grid": 18,
+     "q": 18,
+     "pts": 0.0
+    },
+    {
+     "round": 10,
+     "pos": 18,
+     "grid": 17,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 11,
+     "pos": "DNF",
+     "grid": 21,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 12,
+     "pos": "DNF",
+     "grid": 21,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 19,
+     "grid": 16,
+     "q": 19,
+     "pts": 0.0
+    },
+    {
+     "round": 14,
+     "pos": 18,
+     "grid": 19,
+     "q": 20,
+     "pts": 0.0
+    },
+    {
+     "round": 15,
+     "pos": 16,
+     "grid": 19,
+     "q": 22,
+     "pts": 0.0
+    },
+    {
+     "round": 16,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 17,
+     "pos": 19,
+     "grid": 18,
+     "q": 21,
+     "pts": 0.0
+    },
+    {
+     "round": 18,
+     "pos": "DNF",
+     "grid": 19,
+     "q": 22,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 8,
+   "team": "cadillac"
+  },
+  "yuki-tsunoda": {
+   "results": [
+    {
+     "round": 12,
+     "pos": 11,
+     "grid": 12,
+     "q": 12,
+     "pts": 0.0
+    },
+    {
+     "round": 13,
+     "pos": 10,
+     "grid": 15,
+     "q": 17,
+     "pts": 1.0
+    },
+    {
+     "round": 14,
+     "pos": 14,
+     "grid": 15,
+     "q": 15,
+     "pts": 0.0
+    }
+   ],
+   "wins": 0,
+   "podiums": 0,
+   "poles": 0,
+   "dnfs": 0,
+   "team": "racing-bulls"
+  }
+ },
+ "track_record": [
+  {
+   "round": 1,
+   "gp": "australia",
+   "pick": "max-verstappen",
+   "pick_p": 0.5485942195349358,
+   "winner": "george-russell",
+   "winner_p": 0.10446745689105741,
+   "winner_rank": 4,
+   "hit": false,
+   "pole_pick": "max-verstappen",
+   "pole": "george-russell",
+   "pole_hit": false
+  },
+  {
+   "round": 2,
+   "gp": "china",
+   "pick": "max-verstappen",
+   "pick_p": 0.42320251155010447,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.07948063999563422,
+   "winner_rank": 4,
+   "hit": false,
+   "pole_pick": "george-russell",
+   "pole": "kimi-antonelli",
+   "pole_hit": false
+  },
+  {
+   "round": 3,
+   "gp": "japan",
+   "pick": "george-russell",
+   "pick_p": 0.28617869384613365,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.27736411128734473,
+   "winner_rank": 2,
+   "hit": false,
+   "pole_pick": "george-russell",
+   "pole": "kimi-antonelli",
+   "pole_hit": false
+  },
+  {
+   "round": 4,
+   "gp": "miami",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.39523603536198354,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.39523603536198354,
+   "winner_rank": 1,
+   "hit": true,
+   "pole_pick": "kimi-antonelli",
+   "pole": "kimi-antonelli",
+   "pole_hit": true
+  },
+  {
+   "round": 5,
+   "gp": "canada",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.4232840890926155,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.4232840890926155,
+   "winner_rank": 1,
+   "hit": true,
+   "pole_pick": "kimi-antonelli",
+   "pole": "george-russell",
+   "pole_hit": false
+  },
+  {
+   "round": 6,
+   "gp": "monaco",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.7092822373144774,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.7092822373144774,
+   "winner_rank": 1,
+   "hit": true,
+   "pole_pick": "kimi-antonelli",
+   "pole": "kimi-antonelli",
+   "pole_hit": true
+  },
+  {
+   "round": 7,
+   "gp": "barcelona-catalunya",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.7708037827272217,
+   "winner": "lewis-hamilton",
+   "winner_p": 0.06851006356566323,
+   "winner_rank": 2,
+   "hit": false,
+   "pole_pick": "kimi-antonelli",
+   "pole": "george-russell",
+   "pole_hit": false
+  },
+  {
+   "round": 8,
+   "gp": "austria",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.5438370208429832,
+   "winner": "george-russell",
+   "winner_p": 0.13742377010997825,
+   "winner_rank": 3,
+   "hit": false,
+   "pole_pick": "kimi-antonelli",
+   "pole": "george-russell",
+   "pole_hit": false
+  },
+  {
+   "round": 9,
+   "gp": "great-britain",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.412730424151445,
+   "winner": "charles-leclerc",
+   "winner_p": 0.019602087464717585,
+   "winner_rank": 6,
+   "hit": false,
+   "pole_pick": "kimi-antonelli",
+   "pole": "kimi-antonelli",
+   "pole_hit": true
+  },
+  {
+   "round": 10,
+   "gp": "belgium",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.3583048438407319,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.3583048438407319,
+   "winner_rank": 1,
+   "hit": true,
+   "pole_pick": "kimi-antonelli",
+   "pole": "kimi-antonelli",
+   "pole_hit": true
+  },
+  {
+   "round": 11,
+   "gp": "hungary",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.5093758884568624,
+   "winner": "lando-norris",
+   "winner_p": 0.02366698634294427,
+   "winner_rank": 6,
+   "hit": false,
+   "pole_pick": "kimi-antonelli",
+   "pole": "lando-norris",
+   "pole_hit": false
+  },
+  {
+   "round": 12,
+   "gp": "netherlands",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.4968378627349056,
+   "winner": "lando-norris",
+   "winner_p": 0.10541601739954479,
+   "winner_rank": 3,
+   "hit": false,
+   "pole_pick": "kimi-antonelli",
+   "pole": "lando-norris",
+   "pole_hit": false
+  },
+  {
+   "round": 13,
+   "gp": "italy",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.41994131245461186,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.41994131245461186,
+   "winner_rank": 1,
+   "hit": true,
+   "pole_pick": "kimi-antonelli",
+   "pole": "pierre-gasly",
+   "pole_hit": false
+  },
+  {
+   "round": 14,
+   "gp": "spain",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.5276326548356736,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.5276326548356736,
+   "winner_rank": 1,
+   "hit": true,
+   "pole_pick": "kimi-antonelli",
+   "pole": "lando-norris",
+   "pole_hit": false
+  },
+  {
+   "round": 15,
+   "gp": "azerbaijan",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.4266075065431469,
+   "winner": "george-russell",
+   "winner_p": 0.13239063168687953,
+   "winner_rank": 2,
+   "hit": false,
+   "pole_pick": "kimi-antonelli",
+   "pole": "george-russell",
+   "pole_hit": false
+  },
+  {
+   "round": 16,
+   "gp": "bahrain",
+   "pick": "george-russell",
+   "pick_p": 0.3664829437070013,
+   "winner": "max-verstappen",
+   "winner_p": 0.09112174472109341,
+   "winner_rank": 4,
+   "hit": false,
+   "pole_pick": "george-russell",
+   "pole": "max-verstappen",
+   "pole_hit": false
+  },
+  {
+   "round": 17,
+   "gp": "singapore",
+   "pick": "kimi-antonelli",
+   "pick_p": 0.23880400989149975,
+   "winner": "max-verstappen",
+   "winner_p": 0.1928019085623226,
+   "winner_rank": 2,
+   "hit": false,
+   "pole_pick": "george-russell",
+   "pole": "max-verstappen",
+   "pole_hit": false
+  },
+  {
+   "round": 18,
+   "gp": "united-states",
+   "pick": "max-verstappen",
+   "pick_p": 0.33608539210684435,
+   "winner": "kimi-antonelli",
+   "winner_p": 0.23380803588539317,
+   "winner_rank": 2,
+   "hit": false,
+   "pole_pick": "max-verstappen",
+   "pole": "kimi-antonelli",
+   "pole_hit": false
+  }
+ ],
+ "evaluation": {
+  "win": {
+   "overall": {
+    "p": {
+     "top1": [
+      0.4636363636363636,
+      0.37272727272727274,
+      0.5547727272727261
+     ],
+     "top3": [
+      0.7363636363636363,
+      0.6545454545454545,
+      0.8090909090909091
+     ],
+     "ll": [
+      1.5345433108553934,
+      1.3444703809374048,
+      1.7292525871049689
+     ]
+    },
+    "p_lr": {
+     "top1": [
+      0.4727272727272727,
+      0.38181818181818183,
+      0.5636363636363636
+     ],
+     "top3": [
+      0.7454545454545455,
+      0.6636363636363637,
+      0.8272727272727273
+     ],
+     "ll": [
+      1.5471041397963812,
+      1.3447712081482128,
+      1.74086749252096
+     ]
+    },
+    "p_gbm": {
+     "top1": [
+      0.45454545454545453,
+      0.36363636363636365,
+      0.5454545454545454
+     ],
+     "top3": [
+      0.7636363636363637,
+      0.6818181818181818,
+      0.8363636363636363
+     ],
+     "ll": [
+      1.562564704476647,
+      1.3627070491268998,
+      1.7727119044181405
+     ]
+    },
+    "p_base": {
+     "top1": [
+      0.45454545454545453,
+      0.36363636363636365,
+      0.5545454545454546
+     ],
+     "top3": [
+      0.7363636363636363,
+      0.6545454545454545,
+      0.8181818181818182
+     ],
+     "ll": [
+      1.9207178151177222,
+      1.8512190307210041,
+      1.9925300980770644
+     ]
+    }
+   },
+   "ll_gain": [
+    0.38617450426232885,
+    0.24173413714913383,
+    0.5227782169544306
+   ],
+   "n_races": 110,
+   "uniform_ll": 3.0108621821184496,
+   "by_season": [
+    {
+     "season": 2022,
+     "races": 22,
+     "top1": 0.5909090909090909,
+     "top1_base": 0.5,
+     "ll": 1.4725008096588021,
+     "ll_base": 1.9311803894305157
+    },
+    {
+     "season": 2023,
+     "races": 22,
+     "top1": 0.8636363636363636,
+     "top1_base": 0.8636363636363636,
+     "ll": 0.6908281202558784,
+     "ll_base": 1.6122017415448346
+    },
+    {
+     "season": 2024,
+     "races": 24,
+     "top1": 0.2916666666666667,
+     "top1_base": 0.375,
+     "ll": 2.011054629809703,
+     "ll_base": 1.9902443955610607
+    },
+    {
+     "season": 2025,
+     "races": 24,
+     "top1": 0.25,
+     "top1_base": 0.2916666666666667,
+     "ll": 1.6706175110856538,
+     "ll_base": 1.9808448937108825
+    },
+    {
+     "season": 2026,
+     "races": 18,
+     "top1": 0.3333333333333333,
+     "top1_base": 0.2222222222222222,
+     "ll": 1.8247997974712054,
+     "ll_base": 2.1121338799425047
+    }
+   ],
+   "calibration": [
+    {
+     "bin": "(-0.001, 0.05]",
+     "pred": 0.006957581047808799,
+     "actual": 0.005555555555555556,
+     "n": 1800.0
+    },
+    {
+     "bin": "(0.05, 0.15]",
+     "pred": 0.08833002601235251,
+     "actual": 0.12946428571428573,
+     "n": 224.0
+    },
+    {
+     "bin": "(0.15, 0.3]",
+     "pred": 0.2079584617378624,
+     "actual": 0.17204301075268819,
+     "n": 93.0
+    },
+    {
+     "bin": "(0.3, 0.5]",
+     "pred": 0.3900360437745811,
+     "actual": 0.3472222222222222,
+     "n": 72.0
+    },
+    {
+     "bin": "(0.5, 0.7]",
+     "pred": 0.5945326404276924,
+     "actual": 0.5862068965517241,
+     "n": 29.0
+    },
+    {
+     "bin": "(0.7, 1.0]",
+     "pred": 0.7662499777284166,
+     "actual": 0.7647058823529411,
+     "n": 17.0
+    }
+   ]
+  },
+  "pole": {
+   "overall": {
+    "p": {
+     "top1": [
+      0.37272727272727274,
+      0.2818181818181818,
+      0.4636363636363636
+     ],
+     "top3": [
+      0.7181818181818181,
+      0.6272727272727273,
+      0.8
+     ],
+     "ll": [
+      1.758116039164637,
+      1.5406417431121497,
+      1.9904743699434209
+     ]
+    },
+    "p_lr": {
+     "top1": [
+      0.36363636363636365,
+      0.2727272727272727,
+      0.45454545454545453
+     ],
+     "top3": [
+      0.7454545454545455,
+      0.6636363636363637,
+      0.8272727272727273
+     ],
+     "ll": [
+      1.7748691162672536,
+      1.546383919866242,
+      2.0258180688737384
+     ]
+    },
+    "p_gbm": {
+     "top1": [
+      0.34545454545454546,
+      0.2545454545454545,
+      0.43636363636363634
+     ],
+     "top3": [
+      0.7181818181818181,
+      0.6363636363636364,
+      0.8
+     ],
+     "ll": [
+      1.8085973739086625,
+      1.5762177487311806,
+      2.0589922274028813
+     ]
+    },
+    "p_base": {
+     "top1": [
+      0.37272727272727274,
+      0.2909090909090909,
+      0.4636363636363636
+     ],
+     "top3": [
+      0.6363636363636364,
+      0.5454545454545454,
+      0.7272727272727273
+     ],
+     "ll": [
+      2.0427196971049355,
+      1.9463861425393416,
+      2.146603090858884
+     ]
+    }
+   },
+   "ll_gain": [
+    0.2846036579402985,
+    0.13707860659508983,
+    0.4215073308959061
+   ],
+   "n_races": 110,
+   "uniform_ll": 3.0108621821184496,
+   "by_season": [
+    {
+     "season": 2022,
+     "races": 22,
+     "top1": 0.36363636363636365,
+     "top1_base": 0.4090909090909091,
+     "ll": 1.9094530206971465,
+     "ll_base": 2.191837927329091
+    },
+    {
+     "season": 2023,
+     "races": 22,
+     "top1": 0.5909090909090909,
+     "top1_base": 0.5909090909090909,
+     "ll": 1.3750996029744502,
+     "ll_base": 1.8935304374616826
+    },
+    {
+     "season": 2024,
+     "races": 24,
+     "top1": 0.5,
+     "top1_base": 0.4583333333333333,
+     "ll": 1.5860139436832281,
+     "ll_base": 1.896644076614918
+    },
+    {
+     "season": 2025,
+     "races": 24,
+     "top1": 0.16666666666666666,
+     "top1_base": 0.20833333333333334,
+     "ll": 1.867286927637748,
+     "ll_base": 2.0388824311898386
+    },
+    {
+     "season": 2026,
+     "races": 18,
+     "top1": 0.2222222222222222,
+     "top1_base": 0.16666666666666666,
+     "ll": 2.1251880930906406,
+     "ll_base": 2.242690359379541
+    }
+   ],
+   "calibration": [
+    {
+     "bin": "(-0.001, 0.05]",
+     "pred": 0.006396580012168901,
+     "actual": 0.00904977375565611,
+     "n": 1768.0
+    },
+    {
+     "bin": "(0.05, 0.15]",
+     "pred": 0.08965787292113463,
+     "actual": 0.10084033613445378,
+     "n": 238.0
+    },
+    {
+     "bin": "(0.15, 0.3]",
+     "pred": 0.21203033013958686,
+     "actual": 0.23148148148148148,
+     "n": 108.0
+    },
+    {
+     "bin": "(0.3, 0.5]",
+     "pred": 0.3870607236320467,
+     "actual": 0.3103448275862069,
+     "n": 87.0
+    },
+    {
+     "bin": "(0.5, 0.7]",
+     "pred": 0.5901623477361206,
+     "actual": 0.5172413793103449,
+     "n": 29.0
+    },
+    {
+     "bin": "(0.7, 1.0]",
+     "pred": 0.7328012175688812,
+     "actual": 0.6,
+     "n": 5.0
+    }
+   ]
+  },
+  "podium": {
+   "brier": 0.08269107621273951,
+   "brier_base": 0.0863897605338641,
+   "calibration": [
+    {
+     "bin": "(-0.001, 0.05]",
+     "pred": 0.011538115687583908,
+     "actual": 0.008178438661710037,
+     "n": 1345.0
+    },
+    {
+     "bin": "(0.05, 0.15]",
+     "pred": 0.09270005893623909,
+     "actual": 0.10471204188481675,
+     "n": 191.0
+    },
+    {
+     "bin": "(0.15, 0.3]",
+     "pred": 0.2222956388292594,
+     "actual": 0.28125,
+     "n": 224.0
+    },
+    {
+     "bin": "(0.3, 0.5]",
+     "pred": 0.3931828456365324,
+     "actual": 0.4024390243902439,
+     "n": 246.0
+    },
+    {
+     "bin": "(0.5, 0.7]",
+     "pred": 0.5871618711167675,
+     "actual": 0.5298013245033113,
+     "n": 151.0
+    },
+    {
+     "bin": "(0.7, 1.0]",
+     "pred": 0.7897035574410898,
+     "actual": 0.7307692307692307,
+     "n": 78.0
+    }
+   ]
+  }
+ },
+ "importance": [
+  {
+   "feature": "Season points vs leader",
+   "share": 0.1427889272621061
+  },
+  {
+   "feature": "Recent qualifying positions",
+   "share": 0.12392052658366631
+  },
+  {
+   "feature": "Points per race, last 5",
+   "share": 0.08460881627195403
+  },
+  {
+   "feature": "Recent finishing positions",
+   "share": 0.0780654072332725
+  },
+  {
+   "feature": "Podium rate, last 10",
+   "share": 0.06718666495091782
+  },
+  {
+   "feature": "Recent qualifying gap to pole",
+   "share": 0.05657618067194168
+  },
+  {
+   "feature": "Team best grid, last 5",
+   "share": 0.04238491093659488
+  },
+  {
+   "feature": "Past results at this circuit",
+   "share": 0.03286803018604335
+  },
+  {
+   "feature": "Qualifying vs team-mate",
+   "share": 0.03159023365179529
+  },
+  {
+   "feature": "Circuit overtaking",
+   "share": 0.03044731301566356
+  }
+ ],
+ "n_train_races": 270,
+ "train_seasons": [
+  2014,
+  2026
+ ]
+}
