@@ -1,1 +1,0 @@
-# f1-race-predictor-2026
