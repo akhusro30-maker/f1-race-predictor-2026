@@ -2,7 +2,7 @@
 
 A machine learning model that predicts who will win the remaining races of the 2026 Formula 1 season, who takes pole, and who ends up on the podium. It also works out the likely race strategy at each circuit. Everything shows up on a web dashboard.
 
-**[Live dashboard](file:///Users/afrazkhusro/Downloads/index.html)**
+**[Live dashboard](https://akhusro30-maker.github.io/f1-race-predictor-2026/)**
 
 ![Next races tab](assets/race.png)
 
